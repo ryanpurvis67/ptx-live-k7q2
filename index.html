@@ -1,3 +1,131 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PTX Live</title>
-<style>body{margin:0;background:#0E1420;color:#E8ECF3;font-family:system-ui,sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;text-align:center}h1{font-size:28px}</style></head>
-<body><div><h1>PTX Live</h1><p>Test page. The live dashboard goes here.</p></div></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>PTX Live</title>
+<style>
+:root{--bg:#0E1420;--card:#172033;--ink:#E8ECF3;--mute:#8A96AB;--acc:#5B9BD5;--exh:#E0A458;--ok:#4CC38A;--bad:#E5484D;--line:#253048}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-text-size-adjust:100%}
+main{max-width:480px;margin:0 auto;padding:12px 16px 32px}
+header{display:flex;justify-content:space-between;align-items:baseline;padding:4px 0 10px}
+h1{font-size:20px;margin:0;letter-spacing:.02em}
+#age{font-size:13px;color:var(--mute)}
+#age.stale{color:var(--bad);font-weight:600}
+.banner{background:var(--exh);color:#1b1205;border-radius:10px;padding:8px 12px;font-size:13px;font-weight:600;margin-bottom:10px;display:none}
+.banner.err{background:var(--bad);color:#fff}
+.card{background:var(--card);border-radius:14px;padding:14px;margin-bottom:10px}
+.hero .n{font-size:56px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.lbl{font-size:12px;color:var(--mute);text-transform:uppercase;letter-spacing:.06em}
+.sub{font-size:13px;color:var(--mute);margin-top:4px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
+.grid .card{margin:0}
+.grid .n{font-size:32px;font-weight:700;font-variant-numeric:tabular-nums;margin-top:2px}
+.exh .n{color:var(--exh)}
+h2{font-size:13px;color:var(--mute);text-transform:uppercase;letter-spacing:.06em;margin:0 0 10px;font-weight:600}
+.row{display:grid;grid-template-columns:44px 1fr 40px;align-items:center;gap:8px;font-size:13px;margin:5px 0}
+.row .k{color:var(--mute);font-variant-numeric:tabular-nums;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row.wide{grid-template-columns:110px 1fr 40px}
+.row .v{text-align:right;font-variant-numeric:tabular-nums}
+.bar{display:flex;height:14px;border-radius:4px;overflow:hidden;background:var(--line)}
+.bar i{display:block;height:100%}
+.a{background:var(--acc)}.e{background:var(--exh)}
+.key{font-size:12px;color:var(--mute);margin-top:8px}
+.key b{display:inline-block;width:10px;height:10px;border-radius:2px;margin:0 4px 0 10px;vertical-align:-1px}
+table{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
+th,td{padding:6px 4px;text-align:right;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}
+th{color:var(--mute);font-weight:500}
+</style>
+</head>
+<body>
+<main>
+<header><h1>PTX Live</h1><span id="age">loading…</span></header>
+<div id="banner" class="banner"></div>
+
+<div class="card hero">
+  <div class="lbl">Audience in today</div>
+  <div class="n" id="aud">–</div>
+  <div class="sub" id="audsub"></div>
+</div>
+
+<div class="grid" id="groups"></div>
+
+<div class="grid">
+  <div class="card"><div class="lbl">TSOs in today</div><div class="n" id="tso">–</div><div class="sub" id="tsosub"></div></div>
+  <div class="card"><div class="lbl">Last 15 min</div><div class="n" id="l15">–</div><div class="sub">arrivals, all badges</div></div>
+  <div class="card"><div class="lbl">Countries</div><div class="n" id="cty">–</div><div class="sub" id="ctysub"></div></div>
+  <div class="card"><div class="lbl">Companies</div><div class="n" id="co">–</div><div class="sub" id="cosub"></div></div>
+</div>
+
+<div class="card"><h2>Arrivals per hour, today</h2><div id="hours"></div>
+  <div class="key"><b class="a"></b>Audience<b class="e"></b>Exhibitors</div></div>
+
+<div class="card"><h2>Top countries today, audience</h2><div id="countries"></div></div>
+
+<div class="card"><h2>By day, unique people</h2><table id="days"></table></div>
+</main>
+
+<script>
+const G=["Visitors","Premium Pass","Speakers","Exhibitors"], AUD=["Visitors","Premium Pass","Speakers"];
+let built=null;
+const $=id=>document.getElementById(id);
+const sum=(o,ks)=>ks.reduce((t,k)=>t+(o[k]||0),0);
+const fmt=n=>(n??0).toLocaleString("en-GB");
+
+function ageTick(){
+  if(!built) return;
+  const m=Math.floor((Date.now()-built)/60000), el=$("age");
+  el.textContent = m<1 ? "updated just now" : `updated ${m} min ago`;
+  el.className = m>=5 ? "stale" : "";
+}
+
+function render(d){
+  // the build stamp is UK wall-clock with no zone, same as the phone on the day
+  built = new Date(d.built.replace(" ","T")).getTime();
+  const b=$("banner");
+  if(d.error){b.textContent=d.error+", showing last good numbers";b.className="banner err";b.style.display="block";}
+  else if(d.test){b.textContent=`TEST DATA: ${d.event} replayed as at ${d.built}`;b.className="banner";b.style.display="block";built=Date.now();}
+  else b.style.display="none";
+
+  $("aud").textContent=fmt(sum(d.today,AUD));
+  $("audsub").textContent=`${fmt(sum(d.event_to_date,AUD))} across the event · ${d.showup_pct}% of ${fmt(sum(d.registered,AUD))} registered`;
+  $("groups").innerHTML=G.map(g=>`<div class="card ${g==="Exhibitors"?"exh":""}"><div class="lbl">${g}</div>
+    <div class="n">${fmt(d.today[g])}</div><div class="sub">${fmt(d.event_to_date[g])} event · ${fmt(d.registered[g])} reg</div></div>`).join("");
+
+  $("tso").textContent=fmt(d.tso_orgs_today);
+  $("tsosub").textContent=`orgs today (${fmt(d.tso_people_today)} people) · ${fmt(d.tso_orgs_event)} event`;
+  $("l15").textContent=fmt(d.last15);
+  $("cty").textContent=fmt(d.countries_today); $("ctysub").textContent=`today · ${fmt(d.countries_event)} event`;
+  $("co").textContent=fmt(d.companies_today);  $("cosub").textContent=`today · ${fmt(d.companies_event)} event`;
+
+  const hmax=Math.max(1,...d.hours.map(h=>h.aud+h.exh));
+  $("hours").innerHTML=d.hours.map(h=>`<div class="row"><span class="k">${h.h}:00</span>
+    <span class="bar"><i class="a" style="width:${100*h.aud/hmax}%"></i><i class="e" style="width:${100*h.exh/hmax}%"></i></span>
+    <span class="v">${h.aud+h.exh}</span></div>`).join("") || `<div class="sub">No arrivals yet today</div>`;
+
+  const cmax=Math.max(1,...d.top_countries.map(c=>c[1]));
+  $("countries").innerHTML=d.top_countries.map(([c,n])=>`<div class="row wide"><span class="k">${c}</span>
+    <span class="bar"><i class="a" style="width:${100*n/cmax}%"></i></span><span class="v">${n}</span></div>`).join("")
+    || `<div class="sub">No arrivals yet today</div>`;
+
+  $("days").innerHTML=`<tr><th>Day</th><th>Vis</th><th>Prem</th><th>Spk</th><th>Exh</th></tr>`+
+    d.per_day.map(r=>`<tr><td>${r.day}</td>${G.map(g=>`<td>${fmt(r[g])}</td>`).join("")}</tr>`).join("");
+  ageTick();
+}
+
+async function load(){
+  try{
+    const r=await fetch("data.json?t="+Date.now(),{cache:"no-store"});
+    if(!r.ok) throw new Error(r.status);
+    render(await r.json());
+  }catch(e){
+    const b=$("banner"); b.textContent="Can't reach the page data, check signal"; b.className="banner err"; b.style.display="block";
+  }
+}
+load(); setInterval(load,60000); setInterval(ageTick,15000);
+</script>
+</body>
+</html>
