@@ -1,0 +1,14 @@
+{
+  "name": "PTX Live",
+  "short_name": "PTX Live",
+  "description": "Power T&D Expo, live attendance",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0E1420",
+  "theme_color": "#0E1420",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}

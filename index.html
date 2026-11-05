@@ -4,16 +4,29 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0E1420">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PTX Live">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="manifest" href="manifest.json">
 <title>PTX Live</title>
 <style>
 :root{--bg:#0E1420;--card:#172033;--ink:#E8ECF3;--mute:#8A96AB;--acc:#5B9BD5;--exh:#E0A458;--ok:#4CC38A;--bad:#E5484D;--line:#253048}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-text-size-adjust:100%}
-main{max-width:480px;margin:0 auto;padding:12px 16px 32px}
-header{display:flex;justify-content:space-between;align-items:baseline;padding:4px 0 10px}
-h1{font-size:20px;margin:0;letter-spacing:.02em}
-#age{font-size:13px;color:var(--mute)}
-#age.stale{color:var(--bad);font-weight:600}
+main{max-width:480px;margin:0 auto;padding:calc(12px + env(safe-area-inset-top)) 16px calc(32px + env(safe-area-inset-bottom))}
+header{display:flex;justify-content:space-between;align-items:center;padding:4px 0 12px}
+h1{font-size:20px;margin:0;letter-spacing:.02em;display:flex;align-items:center;gap:8px}
+h1 svg{width:18px;height:18px}
+.live{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--mute)}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 rgba(76,195,138,.6);animation:pulse 2s infinite}
+.live.stale{color:var(--bad);font-weight:600}
+.live.stale .dot{background:var(--bad);animation:none}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(76,195,138,.6)}70%{box-shadow:0 0 0 8px rgba(76,195,138,0)}100%{box-shadow:0 0 0 0 rgba(76,195,138,0)}}
+.card.hero{background:linear-gradient(135deg,#1E3354 0%,#172033 60%);border:1px solid #27406A}
 .banner{background:var(--exh);color:#1b1205;border-radius:10px;padding:8px 12px;font-size:13px;font-weight:600;margin-bottom:10px;display:none}
 .banner.err{background:var(--bad);color:#fff}
 .card{background:var(--card);border-radius:14px;padding:14px;margin-bottom:10px}
@@ -42,7 +55,10 @@ th{color:var(--mute);font-weight:500}
 </head>
 <body>
 <main>
-<header><h1>PTX Live</h1><span id="age">loading…</span></header>
+<header>
+  <h1><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#5B9BD5" d="M14 2 6 13h5l-2 9 9-12h-5l3-8z"/></svg>PTX Live</h1>
+  <span class="live" id="live"><span class="dot"></span><span id="age">loading…</span></span>
+</header>
 <div id="banner" class="banner"></div>
 
 <div class="card hero">
@@ -77,14 +93,14 @@ const fmt=n=>(n??0).toLocaleString("en-GB");
 
 function ageTick(){
   if(!built) return;
-  const m=Math.floor((Date.now()-built)/60000), el=$("age");
-  el.textContent = m<1 ? "updated just now" : `updated ${m} min ago`;
-  el.className = m>=5 ? "stale" : "";
+  const m=Math.floor((Date.now()-built)/60000);
+  $("age").textContent = m<1 ? "live" : m<5 ? `${m} min ago` : `stale, ${m} min`;
+  $("live").className = "live" + (m>=5 ? " stale" : "");
 }
 
 // bump with PAGE_VERSION in build_onsite_dashboard.py: an old cached copy of this page
 // sees a newer number in data.json and reloads itself, so the phone never runs stale code
-const PAGE=3;
+const PAGE=4;
 
 function render(d){
   if(d.page && d.page>PAGE){ location.replace(location.pathname+"?v="+d.page+"&t="+Date.now()); return; }
