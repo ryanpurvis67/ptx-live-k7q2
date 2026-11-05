@@ -61,6 +61,25 @@ th{color:var(--mute);font-weight:500}
 </header>
 <div id="banner" class="banner"></div>
 
+<section id="reg" style="display:none">
+<div class="card hero">
+  <div class="lbl">Registered, same as the wallboard</div>
+  <div class="n" id="rtotal">–</div>
+  <div class="sub" id="rsub"></div>
+</div>
+<div class="grid" id="rgroups"></div>
+<div class="grid">
+  <div class="card"><div class="lbl">TSOs</div><div class="n" id="rtso">–</div><div class="sub" id="rtsosub"></div></div>
+  <div class="card"><div class="lbl">New today</div><div class="n" id="rtoday">–</div><div class="sub" id="r7"></div></div>
+  <div class="card"><div class="lbl">Countries</div><div class="n" id="rcty">–</div><div class="sub">registered</div></div>
+  <div class="card"><div class="lbl">Companies</div><div class="n" id="rco">–</div><div class="sub">registered</div></div>
+</div>
+<div class="card"><h2>Registrations per day, last 14 days</h2><div id="rdaily"></div></div>
+<div class="card"><h2>Top countries</h2><div id="rcountries"></div></div>
+<div class="card"><h2>Where they came from</h2><div id="rchannels"></div></div>
+</section>
+
+<section id="att" style="display:none">
 <div class="card hero">
   <div class="lbl" id="audlbl">Audience in today</div>
   <div class="n" id="aud">–</div>
@@ -82,6 +101,7 @@ th{color:var(--mute);font-weight:500}
 <div class="card"><h2 id="ctylbl">Top countries today, audience</h2><div id="countries"></div></div>
 
 <div class="card" id="dayscard"><h2>By day, unique people</h2><table id="days"></table></div>
+</section>
 </main>
 
 <script>
@@ -100,7 +120,27 @@ function ageTick(){
 
 // bump with PAGE_VERSION in build_onsite_dashboard.py: an old cached copy of this page
 // sees a newer number in data.json and reloads itself, so the phone never runs stale code
-const PAGE=5;
+const PAGE=6;
+
+// horizontal bar rows: [[label, n], ...]
+function bars(rows, wide){
+  const max=Math.max(1,...rows.map(r=>r[1]));
+  return rows.map(([k,n])=>`<div class="row${wide?" wide":""}"><span class="k">${k}</span>
+    <span class="bar"><i class="a" style="width:${100*n/max}%"></i></span><span class="v">${fmt(n)}</span></div>`).join("");
+}
+
+function renderReg(r){
+  $("rtotal").textContent=fmt(r.total);
+  $("rsub").textContent=`+${fmt(r.today)} today · +${fmt(r.last7)} last 7 days`;
+  $("rgroups").innerHTML=G.map(g=>`<div class="card ${g==="Exhibitors"?"exh":""}"><div class="lbl">${g}</div>
+    <div class="n">${fmt(r.groups[g])}</div><div class="sub">${g==="Exhibitors"?"not in the total":"registered"}</div></div>`).join("");
+  $("rtso").textContent=fmt(r.tso_orgs); $("rtsosub").textContent=`orgs (${fmt(r.tso_people)} people)`;
+  $("rtoday").textContent=fmt(r.today); $("r7").textContent=`${fmt(r.last7)} last 7 days`;
+  $("rcty").textContent=fmt(r.countries); $("rco").textContent=fmt(r.companies);
+  $("rdaily").innerHTML=bars(r.daily.map(x=>[x.d,x.n]));
+  $("rcountries").innerHTML=bars(r.top_countries,true);
+  $("rchannels").innerHTML=bars(r.channels,true);
+}
 
 function render(d){
   if(d.page && d.page>PAGE){ location.replace(location.pathname+"?v="+d.page+"&t="+Date.now()); return; }
@@ -109,15 +149,17 @@ function render(d){
   const b=$("banner");
   if(d.error){b.textContent=d.error+", showing last good numbers";b.className="banner err";b.style.display="block";}
   else if(d.test){b.textContent=`TEST DATA: ${d.event} replayed as at ${d.built}`;b.className="banner";b.style.display="block";built=Date.now();}
-  else if(d.mode==="waiting"){b.textContent="Waiting for doors to open. Counts start at the first badge scan.";b.className="banner";b.style.display="block";}
   else b.style.display="none";
-  const wait=d.mode==="waiting";
+  // registrations until the first badge scan, then arrivals for the rest of the show
+  const reg=d.mode==="registration";
+  $("reg").style.display=reg?"block":"none"; $("att").style.display=reg?"none":"block";
+  if(reg){ renderReg(d.registration); ageTick(); return; }
 
   $("aud").textContent=fmt(sum(d.today,AUD));
-  $("audsub").textContent= wait ? "" :
+  $("audsub").textContent=
     `${fmt(sum(d.event_to_date,AUD))} across the event · ${d.showup_pct}% of ${fmt(sum(d.registered,AUD))} registered`;
   $("groups").innerHTML=G.map(g=>`<div class="card ${g==="Exhibitors"?"exh":""}"><div class="lbl">${g}</div>
-    <div class="n">${fmt(d.today[g])}</div><div class="sub">${wait?"":`${fmt(d.event_to_date[g])} event · ${fmt(d.registered[g])} reg`}</div></div>`).join("");
+    <div class="n">${fmt(d.today[g])}</div><div class="sub">${fmt(d.event_to_date[g])} event · ${fmt(d.registered[g])} reg</div></div>`).join("");
 
   $("tso").textContent=fmt(d.tso_orgs_today);
   $("tsosub").textContent=`orgs today (${fmt(d.tso_people_today)} people) · ${fmt(d.tso_orgs_event)} event`;
