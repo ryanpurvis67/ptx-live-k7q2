@@ -1,7 +1,7 @@
 {
  "event": "PTXB6",
  "page": 4,
- "built": "2026-11-05 14:14:56",
+ "built": "2026-11-05 15:12:06",
  "test": false,
  "mode": "waiting",
  "today": {
@@ -17,7 +17,7 @@
   "Exhibitors": 0
  },
  "registered": {
-  "Visitors": 1005,
+  "Visitors": 1008,
   "Premium Pass": 117,
   "Speakers": 10,
   "Exhibitors": 777
@@ -65,6 +65,11 @@
   },
   {
    "h": "14",
+   "aud": 0,
+   "exh": 0
+  },
+  {
+   "h": "15",
    "aud": 0,
    "exh": 0
   }
