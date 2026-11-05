@@ -1,9 +1,150 @@
 {
  "event": "PTXB6",
- "page": 5,
- "built": "2026-11-05 17:28:25",
+ "page": 6,
+ "built": "2026-11-05 17:33:06",
  "test": false,
- "mode": "waiting",
+ "mode": "registration",
+ "registration": {
+  "total": 1136,
+  "groups": {
+   "Visitors": 1009,
+   "Premium Pass": 117,
+   "Speakers": 10,
+   "Exhibitors": 777
+  },
+  "today": 29,
+  "last7": 161,
+  "tso_orgs": 45,
+  "tso_people": 103,
+  "countries": 98,
+  "companies": 788,
+  "daily": [
+   {
+    "d": "Fri 23",
+    "n": 14
+   },
+   {
+    "d": "Sat 24",
+    "n": 1
+   },
+   {
+    "d": "Sun 25",
+    "n": 4
+   },
+   {
+    "d": "Mon 26",
+    "n": 32
+   },
+   {
+    "d": "Tue 27",
+    "n": 21
+   },
+   {
+    "d": "Wed 28",
+    "n": 18
+   },
+   {
+    "d": "Thu 29",
+    "n": 30
+   },
+   {
+    "d": "Fri 30",
+    "n": 20
+   },
+   {
+    "d": "Sat 31",
+    "n": 14
+   },
+   {
+    "d": "Sun 01",
+    "n": 8
+   },
+   {
+    "d": "Mon 02",
+    "n": 35
+   },
+   {
+    "d": "Tue 03",
+    "n": 22
+   },
+   {
+    "d": "Wed 04",
+    "n": 30
+   },
+   {
+    "d": "Thu 05",
+    "n": 29
+   }
+  ],
+  "top_countries": [
+   [
+    "Germany",
+    363
+   ],
+   [
+    "United Kingdom",
+    69
+   ],
+   [
+    "Turkey",
+    67
+   ],
+   [
+    "India",
+    53
+   ],
+   [
+    "Netherlands",
+    52
+   ],
+   [
+    "Italy",
+    31
+   ],
+   [
+    "Belgium",
+    22
+   ],
+   [
+    "Saudi Arabia",
+    22
+   ]
+  ],
+  "channels": [
+   [
+    "Website",
+    771
+   ],
+   [
+    "No code",
+    229
+   ],
+   [
+    "LinkedIn",
+    31
+   ],
+   [
+    "Promo email",
+    29
+   ],
+   [
+    "Newsletter",
+    26
+   ],
+   [
+    "Partner media",
+    16
+   ],
+   [
+    "Google Ads",
+    16
+   ],
+   [
+    "Media Partner",
+    5
+   ]
+  ]
+ },
  "today": {
   "Visitors": 0,
   "Premium Pass": 0,
