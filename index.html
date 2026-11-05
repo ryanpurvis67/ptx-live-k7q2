@@ -82,7 +82,12 @@ function ageTick(){
   el.className = m>=5 ? "stale" : "";
 }
 
+// bump with PAGE_VERSION in build_onsite_dashboard.py: an old cached copy of this page
+// sees a newer number in data.json and reloads itself, so the phone never runs stale code
+const PAGE=2;
+
 function render(d){
+  if(d.page && d.page>PAGE){ location.replace(location.pathname+"?v="+d.page+"&t="+Date.now()); return; }
   // the build stamp is UK wall-clock with no zone, same as the phone on the day
   built = new Date(d.built.replace(" ","T")).getTime();
   const b=$("banner");
