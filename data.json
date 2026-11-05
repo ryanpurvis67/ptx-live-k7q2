@@ -1,106 +1,182 @@
 {
- "event": "PTX95",
- "built": "2025-09-17 11:00:00",
- "test": true,
+ "event": "PTXB6",
+ "built": "2026-11-05 13:59:35",
+ "test": false,
+ "mode": "registration",
+ "reg": {
+  "total": 1130,
+  "by_group": {
+   "Visitors": 1003,
+   "Premium Pass": 117,
+   "Speakers": 10,
+   "Exhibitors": 771
+  },
+  "today": {
+   "Visitors": 23,
+   "Premium Pass": 0,
+   "Speakers": 0,
+   "Exhibitors": 11
+  },
+  "last15": 1,
+  "last7": 152,
+  "tso_orgs": 45,
+  "tso_people": 103,
+  "countries": 98,
+  "companies": 785,
+  "days": [
+   {
+    "d": "23 Oct",
+    "n": 14
+   },
+   {
+    "d": "24 Oct",
+    "n": 1
+   },
+   {
+    "d": "25 Oct",
+    "n": 4
+   },
+   {
+    "d": "26 Oct",
+    "n": 32
+   },
+   {
+    "d": "27 Oct",
+    "n": 21
+   },
+   {
+    "d": "28 Oct",
+    "n": 18
+   },
+   {
+    "d": "29 Oct",
+    "n": 30
+   },
+   {
+    "d": "30 Oct",
+    "n": 20
+   },
+   {
+    "d": "31 Oct",
+    "n": 14
+   },
+   {
+    "d": "01 Nov",
+    "n": 8
+   },
+   {
+    "d": "02 Nov",
+    "n": 35
+   },
+   {
+    "d": "03 Nov",
+    "n": 22
+   },
+   {
+    "d": "04 Nov",
+    "n": 30
+   },
+   {
+    "d": "05 Nov",
+    "n": 23
+   }
+  ],
+  "top_countries": [
+   [
+    "Germany",
+    360
+   ],
+   [
+    "United Kingdom",
+    69
+   ],
+   [
+    "Turkey",
+    67
+   ],
+   [
+    "India",
+    53
+   ],
+   [
+    "Netherlands",
+    52
+   ],
+   [
+    "Italy",
+    31
+   ],
+   [
+    "Belgium",
+    22
+   ],
+   [
+    "Saudi Arabia",
+    22
+   ]
+  ]
+ },
  "today": {
-  "Visitors": 273,
-  "Premium Pass": 58,
-  "Speakers": 3,
-  "Exhibitors": 298
+  "Visitors": 0,
+  "Premium Pass": 0,
+  "Speakers": 0,
+  "Exhibitors": 0
  },
  "event_to_date": {
-  "Visitors": 501,
-  "Premium Pass": 86,
-  "Speakers": 12,
-  "Exhibitors": 351
+  "Visitors": 0,
+  "Premium Pass": 0,
+  "Speakers": 0,
+  "Exhibitors": 0
  },
  "registered": {
-  "Visitors": 1243,
-  "Premium Pass": 126,
-  "Speakers": 13,
-  "Exhibitors": 484
+  "Visitors": 1003,
+  "Premium Pass": 117,
+  "Speakers": 10,
+  "Exhibitors": 771
  },
- "last15": 24,
- "tso_people_today": 58,
- "tso_orgs_today": 27,
- "tso_people_event": 90,
- "tso_orgs_event": 34,
- "countries_today": 48,
- "countries_event": 60,
- "companies_today": 334,
- "companies_event": 503,
- "showup_pct": 43,
+ "last15": 0,
+ "tso_people_today": 0,
+ "tso_orgs_today": 0,
+ "tso_people_event": 0,
+ "tso_orgs_event": 0,
+ "countries_today": 0,
+ "countries_event": 0,
+ "companies_today": 0,
+ "companies_event": 0,
+ "showup_pct": 0,
  "hours": [
   {
-   "h": "07",
-   "aud": 3,
-   "exh": 4
-  },
-  {
    "h": "08",
-   "aud": 26,
-   "exh": 30
+   "aud": 0,
+   "exh": 0
   },
   {
    "h": "09",
-   "aud": 158,
-   "exh": 183
+   "aud": 0,
+   "exh": 0
   },
   {
    "h": "10",
-   "aud": 147,
-   "exh": 81
-  }
- ],
- "top_countries": [
-  [
-   "Germany",
-   129
-  ],
-  [
-   "Netherlands",
-   33
-  ],
-  [
-   "Belgium",
-   19
-  ],
-  [
-   "United Kingdom",
-   16
-  ],
-  [
-   "Austria",
-   13
-  ],
-  [
-   "Saudi Arabia",
-   11
-  ],
-  [
-   "Poland",
-   9
-  ],
-  [
-   "Switzerland",
-   9
-  ]
- ],
- "per_day": [
-  {
-   "day": "Tue 16 Sep",
-   "Visitors": 314,
-   "Premium Pass": 70,
-   "Speakers": 12,
-   "Exhibitors": 316
+   "aud": 0,
+   "exh": 0
   },
   {
-   "day": "Wed 17 Sep",
-   "Visitors": 273,
-   "Premium Pass": 58,
-   "Speakers": 3,
-   "Exhibitors": 298
+   "h": "11",
+   "aud": 0,
+   "exh": 0
+  },
+  {
+   "h": "12",
+   "aud": 0,
+   "exh": 0
+  },
+  {
+   "h": "13",
+   "aud": 0,
+   "exh": 0
   }
  ],
+ "top_countries": [],
+ "per_day": [],
  "error": null
 }

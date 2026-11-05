@@ -25,7 +25,7 @@ h1{font-size:20px;margin:0;letter-spacing:.02em}
 .grid .n{font-size:32px;font-weight:700;font-variant-numeric:tabular-nums;margin-top:2px}
 .exh .n{color:var(--exh)}
 h2{font-size:13px;color:var(--mute);text-transform:uppercase;letter-spacing:.06em;margin:0 0 10px;font-weight:600}
-.row{display:grid;grid-template-columns:44px 1fr 40px;align-items:center;gap:8px;font-size:13px;margin:5px 0}
+.row{display:grid;grid-template-columns:52px 1fr 40px;align-items:center;gap:8px;font-size:13px;margin:5px 0}
 .row .k{color:var(--mute);font-variant-numeric:tabular-nums;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .row.wide{grid-template-columns:110px 1fr 40px}
 .row .v{text-align:right;font-variant-numeric:tabular-nums}
@@ -46,7 +46,7 @@ th{color:var(--mute);font-weight:500}
 <div id="banner" class="banner"></div>
 
 <div class="card hero">
-  <div class="lbl">Audience in today</div>
+  <div class="lbl" id="audlbl">Audience in today</div>
   <div class="n" id="aud">–</div>
   <div class="sub" id="audsub"></div>
 </div>
@@ -54,18 +54,18 @@ th{color:var(--mute);font-weight:500}
 <div class="grid" id="groups"></div>
 
 <div class="grid">
-  <div class="card"><div class="lbl">TSOs in today</div><div class="n" id="tso">–</div><div class="sub" id="tsosub"></div></div>
-  <div class="card"><div class="lbl">Last 15 min</div><div class="n" id="l15">–</div><div class="sub">arrivals, all badges</div></div>
+  <div class="card"><div class="lbl" id="tsolbl">TSOs in today</div><div class="n" id="tso">–</div><div class="sub" id="tsosub"></div></div>
+  <div class="card"><div class="lbl">Last 15 min</div><div class="n" id="l15">–</div><div class="sub" id="l15sub">arrivals, all badges</div></div>
   <div class="card"><div class="lbl">Countries</div><div class="n" id="cty">–</div><div class="sub" id="ctysub"></div></div>
   <div class="card"><div class="lbl">Companies</div><div class="n" id="co">–</div><div class="sub" id="cosub"></div></div>
 </div>
 
-<div class="card"><h2>Arrivals per hour, today</h2><div id="hours"></div>
-  <div class="key"><b class="a"></b>Audience<b class="e"></b>Exhibitors</div></div>
+<div class="card"><h2 id="hourslbl">Arrivals per hour, today</h2><div id="hours"></div>
+  <div class="key" id="hourskey"><b class="a"></b>Audience<b class="e"></b>Exhibitors</div></div>
 
-<div class="card"><h2>Top countries today, audience</h2><div id="countries"></div></div>
+<div class="card"><h2 id="ctylbl">Top countries today, audience</h2><div id="countries"></div></div>
 
-<div class="card"><h2>By day, unique people</h2><table id="days"></table></div>
+<div class="card" id="dayscard"><h2>By day, unique people</h2><table id="days"></table></div>
 </main>
 
 <script>
@@ -88,8 +88,14 @@ function render(d){
   const b=$("banner");
   if(d.error){b.textContent=d.error+", showing last good numbers";b.className="banner err";b.style.display="block";}
   else if(d.test){b.textContent=`TEST DATA: ${d.event} replayed as at ${d.built}`;b.className="banner";b.style.display="block";built=Date.now();}
+  else if(d.mode==="registration"){b.textContent="Pre-show: registrations. Switches to door arrivals at the first badge scan.";b.className="banner";b.style.display="block";}
   else b.style.display="none";
+  if(d.mode==="registration") return renderReg(d.reg);
 
+  $("audlbl").textContent="Audience in today"; $("tsolbl").textContent="TSOs in today";
+  $("l15sub").textContent="arrivals, all badges"; $("hourslbl").textContent="Arrivals per hour, today";
+  $("hourskey").style.display=""; $("ctylbl").textContent="Top countries today, audience";
+  $("dayscard").style.display="";
   $("aud").textContent=fmt(sum(d.today,AUD));
   $("audsub").textContent=`${fmt(sum(d.event_to_date,AUD))} across the event · ${d.showup_pct}% of ${fmt(sum(d.registered,AUD))} registered`;
   $("groups").innerHTML=G.map(g=>`<div class="card ${g==="Exhibitors"?"exh":""}"><div class="lbl">${g}</div>
@@ -113,6 +119,32 @@ function render(d){
 
   $("days").innerHTML=`<tr><th>Day</th><th>Vis</th><th>Prem</th><th>Spk</th><th>Exh</th></tr>`+
     d.per_day.map(r=>`<tr><td>${r.day}</td>${G.map(g=>`<td>${fmt(r[g])}</td>`).join("")}</tr>`).join("");
+  ageTick();
+}
+
+function bars(rows,wide){
+  const mx=Math.max(1,...rows.map(r=>r[1]));
+  return rows.map(([k,n])=>`<div class="row ${wide?"wide":""}"><span class="k">${k}</span>
+    <span class="bar"><i class="a" style="width:${100*n/mx}%"></i></span><span class="v">${fmt(n)}</span></div>`).join("");
+}
+
+// pre-show: registrations, same headline number as the office wallboard
+function renderReg(r){
+  $("audlbl").textContent="Registered (wallboard)";
+  $("aud").textContent=fmt(r.total);
+  $("audsub").textContent=`+${fmt(sum(r.today,AUD))} today · +${fmt(r.last7)} last 7 days`;
+  $("groups").innerHTML=G.map(g=>`<div class="card ${g==="Exhibitors"?"exh":""}"><div class="lbl">${g}</div>
+    <div class="n">${fmt(r.by_group[g])}</div><div class="sub">+${fmt(r.today[g])} today</div></div>`).join("");
+  $("tsolbl").textContent="TSOs registered";
+  $("tso").textContent=fmt(r.tso_orgs); $("tsosub").textContent=`orgs (${fmt(r.tso_people)} people)`;
+  $("l15").textContent=fmt(r.last15); $("l15sub").textContent="new registrations";
+  $("cty").textContent=fmt(r.countries); $("ctysub").textContent="registered audience";
+  $("co").textContent=fmt(r.companies);  $("cosub").textContent="registered audience";
+  $("hourslbl").textContent="Registrations per day, last 14 days"; $("hourskey").style.display="none";
+  $("hours").innerHTML=bars(r.days.map(x=>[x.d,x.n]),false);
+  $("ctylbl").textContent="Top countries registered";
+  $("countries").innerHTML=bars(r.top_countries,true);
+  $("dayscard").style.display="none";
   ageTick();
 }
 
