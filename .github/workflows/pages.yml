@@ -9,9 +9,11 @@ permissions:
   contents: read
   pages: write
   id-token: write
+# queue, never cancel: cancelling a running Pages deployment orphans it and every deploy
+# after that fails with "in progress deployment". GitHub keeps only the newest queued run.
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   deploy:
     runs-on: ubuntu-latest
