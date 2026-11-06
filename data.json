@@ -1,7 +1,7 @@
 {
  "event": "PTXB6",
  "page": 6,
- "built": "2026-11-06 07:58:01",
+ "built": "2026-11-06 08:04:11",
  "test": false,
  "mode": "registration",
  "registration": {
@@ -173,7 +173,13 @@
  "companies_today": 0,
  "companies_event": 0,
  "showup_pct": 0,
- "hours": [],
+ "hours": [
+  {
+   "h": "08",
+   "aud": 0,
+   "exh": 0
+  }
+ ],
  "top_countries": [],
  "per_day": [],
  "error": null
