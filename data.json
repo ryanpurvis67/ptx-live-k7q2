@@ -1,7 +1,7 @@
 {
  "event": "PTXB6",
  "page": 6,
- "built": "2026-11-06 23:59:57",
+ "built": "2026-11-07 00:06:12",
  "test": false,
  "mode": "registration",
  "registration": {
@@ -12,17 +12,13 @@
    "Speakers": 10,
    "Exhibitors": 792
   },
-  "today": 34,
+  "today": 0,
   "last7": 178,
   "tso_orgs": 45,
   "tso_people": 103,
   "countries": 99,
   "companies": 772,
   "daily": [
-   {
-    "d": "Sat 24",
-    "n": 1
-   },
    {
     "d": "Sun 25",
     "n": 4
@@ -74,6 +70,10 @@
    {
     "d": "Fri 06",
     "n": 34
+   },
+   {
+    "d": "Sat 07",
+    "n": 0
    }
   ],
   "top_countries": [
@@ -173,88 +173,7 @@
  "companies_today": 0,
  "companies_event": 0,
  "showup_pct": 0,
- "hours": [
-  {
-   "h": "08",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "09",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "10",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "11",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "12",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "13",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "14",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "15",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "16",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "17",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "18",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "19",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "20",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "21",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "22",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "23",
-   "aud": 0,
-   "exh": 0
-  }
- ],
+ "hours": [],
  "top_countries": [],
  "per_day": [],
  "error": null
