@@ -1,32 +1,24 @@
 {
  "event": "PTXB6",
  "page": 6,
- "built": "2026-11-09 08:53:32",
+ "built": "2026-11-09 08:59:46",
  "test": false,
  "mode": "registration",
  "registration": {
-  "total": 1178,
+  "total": 1201,
   "groups": {
-   "Visitors": 1051,
-   "Premium Pass": 117,
+   "Visitors": 1069,
+   "Premium Pass": 122,
    "Speakers": 10,
-   "Exhibitors": 796
+   "Exhibitors": 800
   },
-  "today": 2,
-  "last7": 170,
-  "tso_orgs": 45,
-  "tso_people": 103,
+  "today": 12,
+  "last7": 175,
+  "tso_orgs": 46,
+  "tso_people": 108,
   "countries": 99,
-  "companies": 774,
+  "companies": 787,
   "daily": [
-   {
-    "d": "Sun 25",
-    "n": 4
-   },
-   {
-    "d": "Mon 26",
-    "n": 32
-   },
    {
     "d": "Tue 27",
     "n": 21
@@ -74,19 +66,27 @@
    {
     "d": "Sat 07",
     "n": 2
+   },
+   {
+    "d": "Sun 08",
+    "n": 11
+   },
+   {
+    "d": "Mon 09",
+    "n": 12
    }
   ],
   "top_countries": [
    [
     "Germany",
-    387
-   ],
-   [
-    "United Kingdom",
-    69
+    395
    ],
    [
     "Turkey",
+    70
+   ],
+   [
+    "United Kingdom",
     69
    ],
    [
@@ -99,25 +99,25 @@
    ],
    [
     "Italy",
-    32
+    34
+   ],
+   [
+    "Belgium",
+    24
    ],
    [
     "Saudi Arabia",
     23
-   ],
-   [
-    "Belgium",
-    22
    ]
   ],
   "channels": [
    [
     "Website",
-    807
+    828
    ],
    [
     "No code",
-    233
+    235
    ],
    [
     "LinkedIn",
@@ -158,10 +158,10 @@
   "Exhibitors": 0
  },
  "registered": {
-  "Visitors": 1051,
-  "Premium Pass": 117,
+  "Visitors": 1069,
+  "Premium Pass": 122,
   "Speakers": 10,
-  "Exhibitors": 796
+  "Exhibitors": 800
  },
  "last15": 0,
  "tso_people_today": 0,
@@ -178,34 +178,9 @@
    "h": "08",
    "aud": 0,
    "exh": 0
-  },
-  {
-   "h": "09",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "10",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "11",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "12",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "13",
-   "aud": 0,
-   "exh": 0
   }
  ],
  "top_countries": [],
  "per_day": [],
- "error": "JET pull failed: TimeoutError"
+ "error": null
 }
