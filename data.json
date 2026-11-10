@@ -1,7 +1,7 @@
 {
  "event": "PTXB6",
  "page": 6,
- "built": "2026-11-10 07:53:52",
+ "built": "2026-11-10 08:00:04",
  "test": false,
  "mode": "registration",
  "registration": {
@@ -13,7 +13,7 @@
    "Exhibitors": 831
   },
   "today": 3,
-  "last7": 214,
+  "last7": 212,
   "tso_orgs": 46,
   "tso_people": 111,
   "countries": 99,
@@ -173,7 +173,13 @@
  "companies_today": 0,
  "companies_event": 0,
  "showup_pct": 0,
- "hours": [],
+ "hours": [
+  {
+   "h": "08",
+   "aud": 0,
+   "exh": 0
+  }
+ ],
  "top_countries": [],
  "per_day": [],
  "error": null
