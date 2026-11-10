@@ -1,28 +1,24 @@
 {
  "event": "PTXB6",
  "page": 6,
- "built": "2026-11-09 23:55:52",
+ "built": "2026-11-10 00:02:03",
  "test": false,
  "mode": "registration",
  "registration": {
-  "total": 1265,
+  "total": 1266,
   "groups": {
-   "Visitors": 1131,
+   "Visitors": 1132,
    "Premium Pass": 122,
    "Speakers": 12,
    "Exhibitors": 830
   },
-  "today": 77,
-  "last7": 211,
+  "today": 0,
+  "last7": 212,
   "tso_orgs": 46,
   "tso_people": 110,
   "countries": 99,
   "companies": 826,
   "daily": [
-   {
-    "d": "Tue 27",
-    "n": 21
-   },
    {
     "d": "Wed 28",
     "n": 18
@@ -73,7 +69,11 @@
    },
    {
     "d": "Mon 09",
-    "n": 77
+    "n": 78
+   },
+   {
+    "d": "Tue 10",
+    "n": 0
    }
   ],
   "top_countries": [
@@ -103,7 +103,7 @@
    ],
    [
     "Belgium",
-    26
+    27
    ],
    [
     "Saudi Arabia",
@@ -113,7 +113,7 @@
   "channels": [
    [
     "Website",
-    883
+    884
    ],
    [
     "No code",
@@ -158,7 +158,7 @@
   "Exhibitors": 0
  },
  "registered": {
-  "Visitors": 1131,
+  "Visitors": 1132,
   "Premium Pass": 122,
   "Speakers": 12,
   "Exhibitors": 830
@@ -173,88 +173,7 @@
  "companies_today": 0,
  "companies_event": 0,
  "showup_pct": 0,
- "hours": [
-  {
-   "h": "08",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "09",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "10",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "11",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "12",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "13",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "14",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "15",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "16",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "17",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "18",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "19",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "20",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "21",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "22",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "23",
-   "aud": 0,
-   "exh": 0
-  }
- ],
+ "hours": [],
  "top_countries": [],
  "per_day": [],
  "error": null
