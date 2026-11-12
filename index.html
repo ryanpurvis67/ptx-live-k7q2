@@ -120,7 +120,7 @@ function ageTick(){
 
 // bump with PAGE_VERSION in build_onsite_dashboard.py: an old cached copy of this page
 // sees a newer number in data.json and reloads itself, so the phone never runs stale code
-const PAGE=6;
+const PAGE=7;
 
 // horizontal bar rows: [[label, n], ...]
 function bars(rows, wide){
@@ -133,7 +133,7 @@ function renderReg(r){
   $("rtotal").textContent=fmt(r.total);
   $("rsub").textContent=`+${fmt(r.today)} today · +${fmt(r.last7)} last 7 days`;
   $("rgroups").innerHTML=G.map(g=>`<div class="card ${g==="Exhibitors"?"exh":""}"><div class="lbl">${g}</div>
-    <div class="n">${fmt(r.groups[g])}</div><div class="sub">${g==="Exhibitors"?"not in the total":"registered"}</div></div>`).join("");
+    <div class="n">${fmt(r.groups[g])}</div><div class="sub">${g==="Exhibitors"||g==="Speakers"?"not in the total":"registered"}</div></div>`).join("");
   $("rtso").textContent=fmt(r.tso_orgs); $("rtsosub").textContent=`orgs (${fmt(r.tso_people)} people)`;
   $("rtoday").textContent=fmt(r.today); $("r7").textContent=`${fmt(r.last7)} last 7 days`;
   $("rcty").textContent=fmt(r.countries); $("rco").textContent=fmt(r.companies);
