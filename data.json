@@ -1,23 +1,23 @@
 {
  "event": "PTXB6",
  "page": 6,
- "built": "2026-11-12 09:30:43",
+ "built": "2026-11-12 09:36:57",
  "test": false,
  "mode": "registration",
  "registration": {
-  "total": 1365,
+  "total": 1387,
   "groups": {
-   "Visitors": 1231,
+   "Visitors": 1232,
    "Premium Pass": 134,
-   "Speakers": 0,
-   "Exhibitors": 912
+   "Speakers": 21,
+   "Exhibitors": 915
   },
-  "today": 27,
-  "last7": 266,
+  "today": 49,
+  "last7": 288,
   "tso_orgs": 46,
-  "tso_people": 116,
+  "tso_people": 124,
   "countries": 100,
-  "companies": 878,
+  "companies": 881,
   "daily": [
    {
     "d": "Fri 30",
@@ -73,13 +73,13 @@
    },
    {
     "d": "Thu 12",
-    "n": 27
+    "n": 49
    }
   ],
   "top_countries": [
    [
     "Germany",
-    482
+    491
    ],
    [
     "Turkey",
@@ -87,11 +87,11 @@
    ],
    [
     "United Kingdom",
-    75
+    77
    ],
    [
     "Netherlands",
-    65
+    66
    ],
    [
     "India",
@@ -99,7 +99,7 @@
    ],
    [
     "Italy",
-    36
+    37
    ],
    [
     "Belgium",
@@ -113,7 +113,7 @@
   "channels": [
    [
     "Website",
-    971
+    972
    ],
    [
     "No code",
@@ -132,16 +132,16 @@
     26
    ],
    [
+    "Other",
+    22
+   ],
+   [
     "Partner media",
     16
    ],
    [
     "Google Ads",
     16
-   ],
-   [
-    "Media Partner",
-    5
    ]
   ]
  },
@@ -158,10 +158,10 @@
   "Exhibitors": 0
  },
  "registered": {
-  "Visitors": 1231,
+  "Visitors": 1232,
   "Premium Pass": 134,
-  "Speakers": 0,
-  "Exhibitors": 912
+  "Speakers": 21,
+  "Exhibitors": 915
  },
  "last15": 0,
  "tso_people_today": 0,
