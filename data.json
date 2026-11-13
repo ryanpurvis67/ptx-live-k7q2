@@ -1,7 +1,7 @@
 {
  "event": "PTTB6",
  "page": 9,
- "built": "2026-11-12 09:20:00",
+ "built": "2026-11-12 12:20:00",
  "test": true,
  "mode": "attendance",
  "registration": {
@@ -134,13 +134,13 @@
   ]
  },
  "today": {
-  "Visitors": 3,
+  "Visitors": 4,
   "Premium Pass": 3,
   "Speakers": 0,
   "Exhibitors": 0
  },
  "event_to_date": {
-  "Visitors": 3,
+  "Visitors": 4,
   "Premium Pass": 3,
   "Speakers": 0,
   "Exhibitors": 0
@@ -152,16 +152,16 @@
   "Exhibitors": 0
  },
  "speakers_merged": 0,
- "last15": 5,
+ "last15": 1,
  "tso_people_today": 3,
  "tso_orgs_today": 3,
  "tso_people_event": 3,
  "tso_orgs_event": 3,
  "countries_today": 5,
  "countries_event": 5,
- "companies_today": 6,
- "companies_event": 6,
- "showup_pct": 12,
+ "companies_today": 7,
+ "companies_event": 7,
+ "showup_pct": 14,
  "hours": [
   {
    "h": "08",
@@ -172,12 +172,27 @@
    "h": "09",
    "aud": 5,
    "exh": 0
+  },
+  {
+   "h": "10",
+   "aud": 0,
+   "exh": 0
+  },
+  {
+   "h": "11",
+   "aud": 0,
+   "exh": 0
+  },
+  {
+   "h": "12",
+   "aud": 1,
+   "exh": 0
   }
  ],
  "top_countries": [
   [
    "Germany",
-   2
+   3
   ],
   [
    "United Kingdom",
@@ -199,7 +214,7 @@
  "per_day": [
   {
    "day": "Thu 12 Nov",
-   "Visitors": 3,
+   "Visitors": 4,
    "Premium Pass": 3,
    "Speakers": 0,
    "Exhibitors": 0
