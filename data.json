@@ -1,222 +1,188 @@
 {
- "event": "PTXB6",
+ "event": "PTTB6",
  "page": 9,
- "built": "2026-11-13 15:30:24",
- "test": false,
- "mode": "registration",
+ "built": "2026-11-12 08:45:00",
+ "test": true,
+ "mode": "attendance",
  "registration": {
-  "total": 1475,
+  "total": 50,
   "groups": {
-   "Visitors": 1337,
-   "Premium Pass": 138,
-   "Speakers": 23,
-   "Exhibitors": 949
+   "Visitors": 43,
+   "Premium Pass": 7,
+   "Speakers": 0,
+   "Exhibitors": 0
   },
-  "today": 55,
-  "last7": 331,
-  "tso_orgs": 46,
-  "tso_people": 120,
-  "countries": 100,
-  "companies": 941,
+  "today": 0,
+  "last7": 1,
+  "tso_orgs": 6,
+  "tso_people": 6,
+  "countries": 17,
+  "companies": 44,
   "daily": [
    {
+    "d": "Fri 30",
+    "n": 0
+   },
+   {
     "d": "Sat 31",
-    "n": 14
+    "n": 0
    },
    {
     "d": "Sun 01",
-    "n": 8
+    "n": 0
    },
    {
     "d": "Mon 02",
-    "n": 35
+    "n": 0
    },
    {
     "d": "Tue 03",
-    "n": 22
+    "n": 0
    },
    {
     "d": "Wed 04",
-    "n": 30
+    "n": 0
    },
    {
     "d": "Thu 05",
-    "n": 34
+    "n": 0
    },
    {
     "d": "Fri 06",
-    "n": 32
+    "n": 0
    },
    {
     "d": "Sat 07",
-    "n": 2
+    "n": 0
    },
    {
     "d": "Sun 08",
-    "n": 11
+    "n": 0
    },
    {
     "d": "Mon 09",
-    "n": 76
+    "n": 0
    },
    {
     "d": "Tue 10",
-    "n": 51
+    "n": 1
    },
    {
     "d": "Wed 11",
-    "n": 46
+    "n": 0
    },
    {
     "d": "Thu 12",
-    "n": 81
-   },
-   {
-    "d": "Fri 13",
-    "n": 55
+    "n": 0
    }
   ],
   "top_countries": [
    [
     "Germany",
-    544
-   ],
-   [
-    "Turkey",
-    87
+    18
    ],
    [
     "United Kingdom",
-    79
+    5
    ],
    [
     "Netherlands",
-    69
-   ],
-   [
-    "India",
-    59
-   ],
-   [
-    "Italy",
-    41
-   ],
-   [
-    "Belgium",
-    34
+    5
    ],
    [
     "Austria",
-    27
+    4
+   ],
+   [
+    "Italy",
+    3
+   ],
+   [
+    "Turkey",
+    2
+   ],
+   [
+    "Canada",
+    2
+   ],
+   [
+    "Zambia",
+    2
    ]
   ],
   "channels": [
    [
-    "Website",
-    1067
-   ],
-   [
     "No code",
-    268
+    22
    ],
    [
-    "LinkedIn",
-    33
-   ],
-   [
-    "Promo email",
-    28
+    "Website",
+    16
    ],
    [
     "Newsletter",
-    26
+    8
    ],
    [
-    "Partner media",
-    16
+    "Promo email",
+    2
    ],
    [
-    "Google Ads",
-    16
-   ],
-   [
-    "Show Preview",
-    6
+    "LinkedIn",
+    2
    ]
   ]
  },
  "today": {
-  "Visitors": 0,
+  "Visitors": 1,
   "Premium Pass": 0,
   "Speakers": 0,
   "Exhibitors": 0
  },
  "event_to_date": {
-  "Visitors": 0,
+  "Visitors": 1,
   "Premium Pass": 0,
   "Speakers": 0,
   "Exhibitors": 0
  },
  "registered": {
-  "Visitors": 1337,
-  "Premium Pass": 138,
+  "Visitors": 43,
+  "Premium Pass": 7,
   "Speakers": 0,
-  "Exhibitors": 949
+  "Exhibitors": 0
  },
- "speakers_merged": 23,
- "last15": 0,
+ "speakers_merged": 0,
+ "last15": 1,
  "tso_people_today": 0,
  "tso_orgs_today": 0,
  "tso_people_event": 0,
  "tso_orgs_event": 0,
- "countries_today": 0,
- "countries_event": 0,
- "companies_today": 0,
- "companies_event": 0,
- "showup_pct": 0,
+ "countries_today": 1,
+ "countries_event": 1,
+ "companies_today": 1,
+ "companies_event": 1,
+ "showup_pct": 2,
  "hours": [
   {
    "h": "08",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "09",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "10",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "11",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "12",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "13",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "14",
-   "aud": 0,
-   "exh": 0
-  },
-  {
-   "h": "15",
-   "aud": 0,
+   "aud": 1,
    "exh": 0
   }
  ],
- "top_countries": [],
- "per_day": [],
+ "top_countries": [
+  [
+   "Germany",
+   1
+  ]
+ ],
+ "per_day": [
+  {
+   "day": "Thu 12 Nov",
+   "Visitors": 1,
+   "Premium Pass": 0,
+   "Speakers": 0,
+   "Exhibitors": 0
+  }
+ ],
  "error": null
 }
