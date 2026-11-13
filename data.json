@@ -1,23 +1,23 @@
 {
  "event": "PTXB6",
  "page": 8,
- "built": "2026-11-13 09:51:51",
+ "built": "2026-11-13 09:58:07",
  "test": false,
  "mode": "registration",
  "registration": {
-  "total": 1443,
+  "total": 1445,
   "groups": {
-   "Visitors": 1303,
+   "Visitors": 1305,
    "Premium Pass": 140,
    "Speakers": 21,
-   "Exhibitors": 941
+   "Exhibitors": 942
   },
-  "today": 23,
-  "last7": 311,
+  "today": 25,
+  "last7": 313,
   "tso_orgs": 49,
   "tso_people": 123,
   "countries": 100,
-  "companies": 923,
+  "companies": 925,
   "daily": [
    {
     "d": "Sat 31",
@@ -73,13 +73,13 @@
    },
    {
     "d": "Fri 13",
-    "n": 23
+    "n": 25
    }
   ],
   "top_countries": [
    [
     "Germany",
-    524
+    525
    ],
    [
     "Turkey",
@@ -113,7 +113,7 @@
   "channels": [
    [
     "Website",
-    1037
+    1039
    ],
    [
     "No code",
@@ -158,10 +158,10 @@
   "Exhibitors": 0
  },
  "registered": {
-  "Visitors": 1303,
+  "Visitors": 1305,
   "Premium Pass": 140,
   "Speakers": 0,
-  "Exhibitors": 941
+  "Exhibitors": 942
  },
  "speakers_merged": 21,
  "last15": 0,
