@@ -51,6 +51,9 @@ table{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:ta
 th,td{padding:6px 4px;text-align:right;border-bottom:1px solid var(--line)}
 th:first-child,td:first-child{text-align:left}
 th{color:var(--mute);font-weight:500}
+.tabs{display:flex;gap:4px;background:var(--card);border-radius:12px;padding:4px;margin-bottom:10px}
+.tabs button{flex:1;border:0;background:transparent;color:var(--mute);font:inherit;font-size:14px;font-weight:600;padding:9px 0;border-radius:9px;cursor:pointer}
+.tabs button.on{background:var(--acc);color:var(--bg)}
 </style>
 </head>
 <body>
@@ -60,6 +63,7 @@ th{color:var(--mute);font-weight:500}
   <span class="live" id="live"><span class="dot"></span><span id="age">loading…</span></span>
 </header>
 <div id="banner" class="banner"></div>
+<nav class="tabs"><button id="tabatt" type="button">Arrivals</button><button id="tabreg" type="button">Pre-reg</button></nav>
 
 <section id="reg" style="display:none">
 <div class="card hero">
@@ -80,6 +84,9 @@ th{color:var(--mute);font-weight:500}
 </section>
 
 <section id="att" style="display:none">
+<div class="card" id="noscan" style="display:none"><div class="lbl">Arrivals</div>
+  <div class="sub">No badges scanned yet. This fills in from the first scan at the door on Tue 17 Nov.</div></div>
+<div id="attbody">
 <div class="card hero">
   <div class="lbl" id="audlbl">Audience in today</div>
   <div class="n" id="aud">–</div>
@@ -101,6 +108,7 @@ th{color:var(--mute);font-weight:500}
 <div class="card"><h2 id="ctylbl">Top countries today, audience</h2><div id="countries"></div></div>
 
 <div class="card" id="dayscard"><h2>By day, unique people</h2><table id="days"></table></div>
+</div>
 </section>
 </main>
 
@@ -120,7 +128,14 @@ function ageTick(){
 
 // bump with PAGE_VERSION in build_onsite_dashboard.py: an old cached copy of this page
 // sees a newer number in data.json and reloads itself, so the phone never runs stale code
-const PAGE=8;
+const PAGE=9;
+
+// which tab is showing: null until chosen, ?tab=reg / ?tab=att opens on one directly
+let view=({reg:"reg",att:"att"})[new URLSearchParams(location.search).get("tab")]??null;
+function show(){
+  $("reg").style.display=view==="reg"?"block":"none"; $("att").style.display=view==="att"?"block":"none";
+  $("tabreg").className=view==="reg"?"on":""; $("tabatt").className=view==="att"?"on":"";
+}
 
 // horizontal bar rows: [[label, n], ...]
 function bars(rows, wide){
@@ -150,10 +165,14 @@ function render(d){
   if(d.error){b.textContent=d.error+", showing last good numbers";b.className="banner err";b.style.display="block";}
   else if(d.test){b.textContent=`TEST DATA: ${d.event} replayed as at ${d.built}`;b.className="banner";b.style.display="block";built=Date.now();}
   else b.style.display="none";
-  // registrations until the first badge scan, then arrivals for the rest of the show
-  const reg=d.mode==="registration";
-  $("reg").style.display=reg?"block":"none"; $("att").style.display=reg?"none":"block";
-  if(reg){ renderReg(d.registration); ageTick(); return; }
+  // both views are always filled; the tab only picks which one shows. Until someone taps
+  // a tab it opens on Pre-reg before the first badge scan and on Arrivals after it.
+  const scanning=d.mode!=="registration";
+  if(view===null) view=scanning?"att":"reg";
+  renderReg(d.registration);
+  $("noscan").style.display=scanning?"none":"block"; $("attbody").style.display=scanning?"block":"none";
+  show();
+  if(!scanning){ ageTick(); return; }
 
   $("aud").textContent=fmt(sum(d.today,AUD));
   $("audsub").textContent=
@@ -191,6 +210,8 @@ async function load(){
     const b=$("banner"); b.textContent="Can't reach the page data, check signal"; b.className="banner err"; b.style.display="block";
   }
 }
+$("tabreg").onclick=()=>{view="reg";show();window.scrollTo(0,0);};
+$("tabatt").onclick=()=>{view="att";show();window.scrollTo(0,0);};
 load(); setInterval(load,60000); setInterval(ageTick,15000);
 </script>
 </body>
