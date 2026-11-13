@@ -128,7 +128,7 @@ function ageTick(){
 
 // bump with PAGE_VERSION in build_onsite_dashboard.py: an old cached copy of this page
 // sees a newer number in data.json and reloads itself, so the phone never runs stale code
-const PAGE=9;
+const PAGE=10;
 
 // which tab is showing: null until chosen, ?tab=reg / ?tab=att opens on one directly
 let view=({reg:"reg",att:"att"})[new URLSearchParams(location.search).get("tab")]??null;
@@ -213,6 +213,10 @@ async function load(){
 $("tabreg").onclick=()=>{view="reg";show();window.scrollTo(0,0);};
 $("tabatt").onclick=()=>{view="att";show();window.scrollTo(0,0);};
 load(); setInterval(load,60000); setInterval(ageTick,15000);
+// phones freeze a backgrounded home-screen app, so fetch the moment it comes back on screen
+// rather than showing the old numbers until the next minute tick
+document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="visible"){ load(); ageTick(); } });
+window.addEventListener("pageshow",e=>{ if(e.persisted) load(); });
 </script>
 </body>
 </html>
