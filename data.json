@@ -1,21 +1,21 @@
 {
  "event": "PTXB6",
  "page": 8,
- "built": "2026-11-13 10:04:24",
+ "built": "2026-11-13 10:10:40",
  "test": false,
  "mode": "registration",
  "registration": {
   "total": 1447,
   "groups": {
-   "Visitors": 1307,
-   "Premium Pass": 140,
+   "Visitors": 1309,
+   "Premium Pass": 138,
    "Speakers": 21,
    "Exhibitors": 942
   },
   "today": 27,
   "last7": 315,
-  "tso_orgs": 49,
-  "tso_people": 123,
+  "tso_orgs": 47,
+  "tso_people": 121,
   "countries": 100,
   "companies": 925,
   "daily": [
@@ -158,8 +158,8 @@
   "Exhibitors": 0
  },
  "registered": {
-  "Visitors": 1307,
-  "Premium Pass": 140,
+  "Visitors": 1309,
+  "Premium Pass": 138,
   "Speakers": 0,
   "Exhibitors": 942
  },
