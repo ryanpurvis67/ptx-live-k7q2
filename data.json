@@ -1,7 +1,7 @@
 {
  "event": "PTXB6",
  "page": 8,
- "built": "2026-11-13 06:56:53",
+ "built": "2026-11-13 07:03:07",
  "test": false,
  "mode": "registration",
  "registration": {
@@ -10,7 +10,7 @@
    "Visitors": 1283,
    "Premium Pass": 139,
    "Speakers": 21,
-   "Exhibitors": 934
+   "Exhibitors": 937
   },
   "today": 2,
   "last7": 300,
@@ -161,7 +161,7 @@
   "Visitors": 1283,
   "Premium Pass": 139,
   "Speakers": 0,
-  "Exhibitors": 934
+  "Exhibitors": 937
  },
  "speakers_merged": 21,
  "last15": 0,
