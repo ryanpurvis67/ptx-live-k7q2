@@ -1,7 +1,7 @@
 {
  "event": "PTXB6",
  "page": 10,
- "built": "2026-11-14 02:24:10",
+ "built": "2026-11-14 02:30:24",
  "test": false,
  "mode": "registration",
  "registration": {
@@ -177,5 +177,5 @@
  "hours": [],
  "top_countries": [],
  "per_day": [],
- "error": null
+ "error": "JET pull failed: URLError"
 }
