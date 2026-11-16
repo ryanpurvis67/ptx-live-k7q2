@@ -1,4 +1,197 @@
 {
- "built": "2026-11-16 10:43:39",
- "error": "JET pull failed: URLError"
+ "event": "PTXB6",
+ "page": 10,
+ "built": "2026-11-16 10:51:05",
+ "test": false,
+ "mode": "registration",
+ "registration": {
+  "total": 1621,
+  "groups": {
+   "Visitors": 1479,
+   "Premium Pass": 142,
+   "Speakers": 24,
+   "Exhibitors": 988
+  },
+  "today": 86,
+  "last7": 424,
+  "tso_orgs": 49,
+  "tso_people": 126,
+  "countries": 101,
+  "companies": 1018,
+  "daily": [
+   {
+    "d": "Tue 03",
+    "n": 22
+   },
+   {
+    "d": "Wed 04",
+    "n": 30
+   },
+   {
+    "d": "Thu 05",
+    "n": 34
+   },
+   {
+    "d": "Fri 06",
+    "n": 32
+   },
+   {
+    "d": "Sat 07",
+    "n": 2
+   },
+   {
+    "d": "Sun 08",
+    "n": 11
+   },
+   {
+    "d": "Mon 09",
+    "n": 76
+   },
+   {
+    "d": "Tue 10",
+    "n": 51
+   },
+   {
+    "d": "Wed 11",
+    "n": 46
+   },
+   {
+    "d": "Thu 12",
+    "n": 81
+   },
+   {
+    "d": "Fri 13",
+    "n": 64
+   },
+   {
+    "d": "Sat 14",
+    "n": 20
+   },
+   {
+    "d": "Sun 15",
+    "n": 31
+   },
+   {
+    "d": "Mon 16",
+    "n": 86
+   }
+  ],
+  "top_countries": [
+   [
+    "Germany",
+    618
+   ],
+   [
+    "Turkey",
+    95
+   ],
+   [
+    "United Kingdom",
+    83
+   ],
+   [
+    "Netherlands",
+    73
+   ],
+   [
+    "India",
+    62
+   ],
+   [
+    "Italy",
+    48
+   ],
+   [
+    "Belgium",
+    36
+   ],
+   [
+    "Switzerland",
+    33
+   ]
+  ],
+  "channels": [
+   [
+    "Website",
+    1187
+   ],
+   [
+    "No code",
+    287
+   ],
+   [
+    "LinkedIn",
+    34
+   ],
+   [
+    "Promo email",
+    28
+   ],
+   [
+    "Newsletter",
+    27
+   ],
+   [
+    "Partner media",
+    16
+   ],
+   [
+    "Google Ads",
+    16
+   ],
+   [
+    "Show Preview",
+    8
+   ]
+  ]
+ },
+ "today": {
+  "Visitors": 0,
+  "Premium Pass": 0,
+  "Speakers": 0,
+  "Exhibitors": 0
+ },
+ "event_to_date": {
+  "Visitors": 0,
+  "Premium Pass": 0,
+  "Speakers": 0,
+  "Exhibitors": 0
+ },
+ "registered": {
+  "Visitors": 1479,
+  "Premium Pass": 142,
+  "Speakers": 0,
+  "Exhibitors": 988
+ },
+ "speakers_merged": 24,
+ "last15": 0,
+ "tso_people_today": 0,
+ "tso_orgs_today": 0,
+ "tso_people_event": 0,
+ "tso_orgs_event": 0,
+ "countries_today": 0,
+ "countries_event": 0,
+ "companies_today": 0,
+ "companies_event": 0,
+ "showup_pct": 0,
+ "hours": [
+  {
+   "h": "08",
+   "aud": 0,
+   "exh": 0
+  },
+  {
+   "h": "09",
+   "aud": 0,
+   "exh": 0
+  },
+  {
+   "h": "10",
+   "aud": 0,
+   "exh": 0
+  }
+ ],
+ "top_countries": [],
+ "per_day": [],
+ "error": null
 }
