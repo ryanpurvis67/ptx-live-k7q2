@@ -1,23 +1,23 @@
 {
  "event": "PTXB6",
  "page": 10,
- "built": "2026-11-16 17:09:17",
+ "built": "2026-11-16 17:15:25",
  "test": false,
  "mode": "registration",
  "registration": {
-  "total": 1676,
+  "total": 1677,
   "groups": {
-   "Visitors": 1534,
+   "Visitors": 1535,
    "Premium Pass": 142,
    "Speakers": 29,
    "Exhibitors": 1027
   },
-  "today": 147,
+  "today": 148,
   "last7": 448,
   "tso_orgs": 49,
   "tso_people": 126,
   "countries": 101,
-  "companies": 1046,
+  "companies": 1047,
   "daily": [
    {
     "d": "Tue 03",
@@ -73,7 +73,7 @@
    },
    {
     "d": "Mon 16",
-    "n": 147
+    "n": 148
    }
   ],
   "top_countries": [
@@ -113,7 +113,7 @@
   "channels": [
    [
     "Website",
-    1233
+    1234
    ],
    [
     "No code",
@@ -158,7 +158,7 @@
   "Exhibitors": 0
  },
  "registered": {
-  "Visitors": 1534,
+  "Visitors": 1535,
   "Premium Pass": 142,
   "Speakers": 2,
   "Exhibitors": 1027
@@ -219,9 +219,14 @@
    "h": "16",
    "aud": 0,
    "exh": 0
+  },
+  {
+   "h": "17",
+   "aud": 0,
+   "exh": 0
   }
  ],
  "top_countries": [],
  "per_day": [],
- "error": "JET pull failed: URLError"
+ "error": null
 }
