@@ -1,8 +1,8 @@
 {
  "event": "PTXB6",
  "page": 11,
- "built": "2026-11-17 10:19:54",
- "built_ts": 1794907205753,
+ "built": "2026-11-17 09:26:14",
+ "built_ts": 1794907574849,
  "test": false,
  "mode": "attendance",
  "registration": {
@@ -240,5 +240,5 @@
    "Exhibitors": 605
   }
  ],
- "error": null
+ "error": "JET pull failed: URLError"
 }
