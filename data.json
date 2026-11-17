@@ -1,24 +1,24 @@
 {
  "event": "PTXB6",
  "page": 11,
- "built": "2026-11-17 14:07:13",
- "built_ts": 1794920843837,
+ "built": "2026-11-17 14:13:29",
+ "built_ts": 1794921219511,
  "test": false,
  "mode": "attendance",
  "registration": {
-  "total": 1787,
+  "total": 1790,
   "groups": {
-   "Visitors": 1644,
+   "Visitors": 1647,
    "Premium Pass": 143,
    "Speakers": 30,
    "Exhibitors": 1065
   },
-  "today": 84,
-  "last7": 510,
+  "today": 87,
+  "last7": 513,
   "tso_orgs": 49,
   "tso_people": 126,
   "countries": 101,
-  "companies": 1113,
+  "companies": 1114,
   "daily": [
    {
     "d": "Wed 04",
@@ -74,21 +74,21 @@
    },
    {
     "d": "Tue 17",
-    "n": 84
+    "n": 87
    }
   ],
   "top_countries": [
    [
     "Germany",
-    707
+    708
    ],
    [
     "Turkey",
-    106
+    107
    ],
    [
     "United Kingdom",
-    91
+    92
    ],
    [
     "Netherlands",
@@ -114,7 +114,7 @@
   "channels": [
    [
     "Website",
-    1314
+    1317
    ],
    [
     "No code",
@@ -147,33 +147,33 @@
   ]
  },
  "today": {
-  "Visitors": 512,
+  "Visitors": 515,
   "Premium Pass": 53,
   "Speakers": 1,
-  "Exhibitors": 703
+  "Exhibitors": 705
  },
  "event_to_date": {
-  "Visitors": 512,
+  "Visitors": 515,
   "Premium Pass": 53,
   "Speakers": 1,
-  "Exhibitors": 703
+  "Exhibitors": 705
  },
  "registered": {
-  "Visitors": 1644,
+  "Visitors": 1647,
   "Premium Pass": 143,
   "Speakers": 3,
   "Exhibitors": 1065
  },
  "speakers_merged": 27,
- "last15": 12,
+ "last15": 10,
  "tso_people_today": 50,
  "tso_orgs_today": 19,
  "tso_people_event": 50,
  "tso_orgs_event": 19,
  "countries_today": 57,
  "countries_event": 57,
- "companies_today": 576,
- "companies_event": 576,
+ "companies_today": 578,
+ "companies_event": 578,
  "showup_pct": 32,
  "hours": [
   {
@@ -213,22 +213,22 @@
   },
   {
    "h": "14",
-   "aud": 5,
-   "exh": 0
+   "aud": 8,
+   "exh": 2
   }
  ],
  "top_countries": [
   [
    "Germany",
-   227
+   228
   ],
   [
    "Turkey",
-   42
+   43
   ],
   [
    "Netherlands",
-   29
+   30
   ],
   [
    "United Kingdom",
@@ -254,10 +254,10 @@
  "per_day": [
   {
    "day": "Tue 17 Nov",
-   "Visitors": 512,
+   "Visitors": 515,
    "Premium Pass": 53,
    "Speakers": 1,
-   "Exhibitors": 703
+   "Exhibitors": 705
   }
  ],
  "error": null
