@@ -1,24 +1,24 @@
 {
  "event": "PTXB6",
  "page": 11,
- "built": "2026-11-17 15:03:41",
- "built_ts": 1794924232490,
+ "built": "2026-11-17 15:09:59",
+ "built_ts": 1794924615086,
  "test": false,
  "mode": "attendance",
  "registration": {
-  "total": 1795,
+  "total": 1796,
   "groups": {
-   "Visitors": 1652,
+   "Visitors": 1653,
    "Premium Pass": 143,
    "Speakers": 30,
    "Exhibitors": 1069
   },
-  "today": 92,
-  "last7": 513,
+  "today": 93,
+  "last7": 514,
   "tso_orgs": 49,
   "tso_people": 126,
   "countries": 101,
-  "companies": 1118,
+  "companies": 1119,
   "daily": [
    {
     "d": "Wed 04",
@@ -74,7 +74,7 @@
    },
    {
     "d": "Tue 17",
-    "n": 92
+    "n": 93
    }
   ],
   "top_countries": [
@@ -142,38 +142,38 @@
    ],
    [
     "Other",
-    15
+    16
    ]
   ]
  },
  "today": {
-  "Visitors": 539,
-  "Premium Pass": 55,
+  "Visitors": 541,
+  "Premium Pass": 56,
   "Speakers": 1,
-  "Exhibitors": 711
+  "Exhibitors": 712
  },
  "event_to_date": {
-  "Visitors": 539,
-  "Premium Pass": 55,
+  "Visitors": 541,
+  "Premium Pass": 56,
   "Speakers": 1,
-  "Exhibitors": 711
+  "Exhibitors": 712
  },
  "registered": {
-  "Visitors": 1652,
+  "Visitors": 1653,
   "Premium Pass": 143,
   "Speakers": 3,
   "Exhibitors": 1069
  },
  "speakers_merged": 27,
- "last15": 12,
- "tso_people_today": 52,
- "tso_orgs_today": 20,
- "tso_people_event": 52,
- "tso_orgs_event": 20,
- "countries_today": 57,
- "countries_event": 57,
- "companies_today": 595,
- "companies_event": 595,
+ "last15": 11,
+ "tso_people_today": 53,
+ "tso_orgs_today": 21,
+ "tso_people_event": 53,
+ "tso_orgs_event": 21,
+ "countries_today": 58,
+ "countries_event": 58,
+ "companies_today": 596,
+ "companies_event": 596,
  "showup_pct": 33,
  "hours": [
   {
@@ -218,8 +218,8 @@
   },
   {
    "h": "15",
-   "aud": 3,
-   "exh": 0
+   "aud": 6,
+   "exh": 1
   }
  ],
  "top_countries": [
@@ -259,10 +259,10 @@
  "per_day": [
   {
    "day": "Tue 17 Nov",
-   "Visitors": 539,
-   "Premium Pass": 55,
+   "Visitors": 541,
+   "Premium Pass": 56,
    "Speakers": 1,
-   "Exhibitors": 711
+   "Exhibitors": 712
   }
  ],
  "error": null
