@@ -1,24 +1,24 @@
 {
  "event": "PTXB6",
  "page": 11,
- "built": "2026-11-17 12:07:39",
- "built_ts": 1794913669737,
+ "built": "2026-11-17 12:13:55",
+ "built_ts": 1794914045520,
  "test": false,
  "mode": "attendance",
  "registration": {
-  "total": 1757,
+  "total": 1759,
   "groups": {
-   "Visitors": 1614,
+   "Visitors": 1616,
    "Premium Pass": 143,
    "Speakers": 29,
    "Exhibitors": 1062
   },
-  "today": 54,
-  "last7": 495,
+  "today": 55,
+  "last7": 496,
   "tso_orgs": 49,
   "tso_people": 126,
   "countries": 100,
-  "companies": 1092,
+  "companies": 1093,
   "daily": [
    {
     "d": "Wed 04",
@@ -54,7 +54,7 @@
    },
    {
     "d": "Thu 12",
-    "n": 80
+    "n": 81
    },
    {
     "d": "Fri 13",
@@ -74,13 +74,13 @@
    },
    {
     "d": "Tue 17",
-    "n": 54
+    "n": 55
    }
   ],
   "top_countries": [
    [
     "Germany",
-    693
+    694
    ],
    [
     "Turkey",
@@ -114,7 +114,7 @@
   "channels": [
    [
     "Website",
-    1295
+    1297
    ],
    [
     "No code",
@@ -147,33 +147,33 @@
   ]
  },
  "today": {
-  "Visitors": 406,
-  "Premium Pass": 46,
+  "Visitors": 411,
+  "Premium Pass": 47,
   "Speakers": 0,
-  "Exhibitors": 686
+  "Exhibitors": 688
  },
  "event_to_date": {
-  "Visitors": 406,
-  "Premium Pass": 46,
+  "Visitors": 411,
+  "Premium Pass": 47,
   "Speakers": 0,
-  "Exhibitors": 686
+  "Exhibitors": 688
  },
  "registered": {
-  "Visitors": 1614,
+  "Visitors": 1616,
   "Premium Pass": 143,
   "Speakers": 2,
   "Exhibitors": 1062
  },
  "speakers_merged": 27,
- "last15": 29,
- "tso_people_today": 43,
+ "last15": 21,
+ "tso_people_today": 44,
  "tso_orgs_today": 18,
- "tso_people_event": 43,
+ "tso_people_event": 44,
  "tso_orgs_event": 18,
  "countries_today": 55,
  "countries_event": 55,
- "companies_today": 514,
- "companies_event": 514,
+ "companies_today": 518,
+ "companies_event": 518,
  "showup_pct": 26,
  "hours": [
   {
@@ -203,18 +203,18 @@
   },
   {
    "h": "12",
-   "aud": 8,
-   "exh": 5
+   "aud": 14,
+   "exh": 7
   }
  ],
  "top_countries": [
   [
    "Germany",
-   175
+   176
   ],
   [
    "Turkey",
-   34
+   37
   ],
   [
    "Netherlands",
@@ -230,7 +230,7 @@
   ],
   [
    "Belgium",
-   15
+   16
   ],
   [
    "Switzerland",
@@ -244,10 +244,10 @@
  "per_day": [
   {
    "day": "Tue 17 Nov",
-   "Visitors": 406,
-   "Premium Pass": 46,
+   "Visitors": 411,
+   "Premium Pass": 47,
    "Speakers": 0,
-   "Exhibitors": 686
+   "Exhibitors": 688
   }
  ],
  "error": null
