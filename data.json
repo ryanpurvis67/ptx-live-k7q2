@@ -1,8 +1,8 @@
 {
  "event": "PTXB6",
  "page": 12,
- "built": "2026-11-17 16:51:35",
- "built_ts": 1794930706809,
+ "built": "2026-11-17 16:57:52",
+ "built_ts": 1794931083138,
  "test": false,
  "mode": "attendance",
  "registration": {
@@ -147,19 +147,19 @@
   ]
  },
  "today": {
-  "Visitors": 554,
+  "Visitors": 555,
   "Premium Pass": 56,
   "Speakers": 1,
   "Exhibitors": 714
  },
  "event_to_date": {
-  "Visitors": 554,
+  "Visitors": 555,
   "Premium Pass": 56,
   "Speakers": 1,
   "Exhibitors": 714
  },
  "event_visits": {
-  "Visitors": 554,
+  "Visitors": 555,
   "Premium Pass": 56,
   "Speakers": 1,
   "Exhibitors": 714
@@ -172,15 +172,15 @@
   "Exhibitors": 1069
  },
  "speakers_merged": 27,
- "last15": 0,
+ "last15": 1,
  "tso_people_today": 53,
  "tso_orgs_today": 21,
  "tso_people_event": 53,
  "tso_orgs_event": 21,
  "countries_today": 59,
  "countries_event": 59,
- "companies_today": 606,
- "companies_event": 606,
+ "companies_today": 607,
+ "companies_event": 607,
  "showup_pct": 34,
  "hours": [
   {
@@ -230,7 +230,7 @@
   },
   {
    "h": "16",
-   "aud": 4,
+   "aud": 5,
    "exh": 0
   }
  ],
@@ -245,7 +245,7 @@
   ],
   [
    "United Kingdom",
-   32
+   33
   ],
   [
    "Netherlands",
@@ -271,7 +271,7 @@
  "per_day": [
   {
    "day": "Tue 17 Nov",
-   "Visitors": 554,
+   "Visitors": 555,
    "Premium Pass": 56,
    "Speakers": 1,
    "Exhibitors": 714
