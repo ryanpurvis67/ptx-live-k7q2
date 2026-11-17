@@ -1,24 +1,24 @@
 {
  "event": "PTXB6",
  "page": 11,
- "built": "2026-11-17 14:19:45",
- "built_ts": 1794921594815,
+ "built": "2026-11-17 14:26:00",
+ "built_ts": 1794921970789,
  "test": false,
  "mode": "attendance",
  "registration": {
-  "total": 1790,
+  "total": 1791,
   "groups": {
-   "Visitors": 1647,
+   "Visitors": 1648,
    "Premium Pass": 143,
    "Speakers": 30,
    "Exhibitors": 1066
   },
-  "today": 87,
+  "today": 88,
   "last7": 513,
   "tso_orgs": 49,
   "tso_people": 126,
   "countries": 101,
-  "companies": 1114,
+  "companies": 1115,
   "daily": [
    {
     "d": "Wed 04",
@@ -74,13 +74,13 @@
    },
    {
     "d": "Tue 17",
-    "n": 87
+    "n": 88
    }
   ],
   "top_countries": [
    [
     "Germany",
-    708
+    709
    ],
    [
     "Turkey",
@@ -114,7 +114,7 @@
   "channels": [
    [
     "Website",
-    1317
+    1318
    ],
    [
     "No code",
@@ -147,33 +147,33 @@
   ]
  },
  "today": {
-  "Visitors": 520,
+  "Visitors": 524,
   "Premium Pass": 55,
   "Speakers": 1,
   "Exhibitors": 706
  },
  "event_to_date": {
-  "Visitors": 520,
+  "Visitors": 524,
   "Premium Pass": 55,
   "Speakers": 1,
   "Exhibitors": 706
  },
  "registered": {
-  "Visitors": 1647,
+  "Visitors": 1648,
   "Premium Pass": 143,
   "Speakers": 3,
   "Exhibitors": 1066
  },
  "speakers_merged": 27,
- "last15": 15,
+ "last15": 13,
  "tso_people_today": 52,
  "tso_orgs_today": 20,
  "tso_people_event": 52,
  "tso_orgs_event": 20,
  "countries_today": 57,
  "countries_event": 57,
- "companies_today": 583,
- "companies_event": 583,
+ "companies_today": 587,
+ "companies_event": 587,
  "showup_pct": 32,
  "hours": [
   {
@@ -213,14 +213,14 @@
   },
   {
    "h": "14",
-   "aud": 15,
+   "aud": 19,
    "exh": 3
   }
  ],
  "top_countries": [
   [
    "Germany",
-   228
+   231
   ],
   [
    "Turkey",
@@ -247,14 +247,14 @@
    16
   ],
   [
-   "Austria",
-   13
+   "China",
+   14
   ]
  ],
  "per_day": [
   {
    "day": "Tue 17 Nov",
-   "Visitors": 520,
+   "Visitors": 524,
    "Premium Pass": 55,
    "Speakers": 1,
    "Exhibitors": 706
