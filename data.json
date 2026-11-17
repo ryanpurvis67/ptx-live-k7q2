@@ -1,14 +1,14 @@
 {
  "event": "PTXB6",
  "page": 11,
- "built": "2026-11-17 13:35:51",
- "built_ts": 1794918962542,
+ "built": "2026-11-17 13:42:08",
+ "built_ts": 1794919338141,
  "test": false,
  "mode": "attendance",
  "registration": {
-  "total": 1781,
+  "total": 1782,
   "groups": {
-   "Visitors": 1638,
+   "Visitors": 1639,
    "Premium Pass": 143,
    "Speakers": 30,
    "Exhibitors": 1065
@@ -58,7 +58,7 @@
    },
    {
     "d": "Fri 13",
-    "n": 64
+    "n": 65
    },
    {
     "d": "Sat 14",
@@ -80,7 +80,7 @@
   "top_countries": [
    [
     "Germany",
-    703
+    704
    ],
    [
     "Turkey",
@@ -114,7 +114,7 @@
   "channels": [
    [
     "Website",
-    1313
+    1314
    ],
    [
     "No code",
@@ -147,33 +147,33 @@
   ]
  },
  "today": {
-  "Visitors": 483,
+  "Visitors": 490,
   "Premium Pass": 52,
   "Speakers": 1,
   "Exhibitors": 701
  },
  "event_to_date": {
-  "Visitors": 483,
+  "Visitors": 490,
   "Premium Pass": 52,
   "Speakers": 1,
   "Exhibitors": 701
  },
  "registered": {
-  "Visitors": 1638,
+  "Visitors": 1639,
   "Premium Pass": 143,
   "Speakers": 3,
   "Exhibitors": 1065
  },
  "speakers_merged": 27,
- "last15": 13,
+ "last15": 14,
  "tso_people_today": 49,
  "tso_orgs_today": 18,
  "tso_people_event": 49,
  "tso_orgs_event": 18,
  "countries_today": 57,
  "countries_event": 57,
- "companies_today": 561,
- "companies_event": 561,
+ "companies_today": 566,
+ "companies_event": 566,
  "showup_pct": 30,
  "hours": [
   {
@@ -208,18 +208,18 @@
   },
   {
    "h": "13",
-   "aud": 23,
+   "aud": 30,
    "exh": 9
   }
  ],
  "top_countries": [
   [
    "Germany",
-   208
+   210
   ],
   [
    "Turkey",
-   40
+   41
   ],
   [
    "Netherlands",
@@ -227,7 +227,7 @@
   ],
   [
    "United Kingdom",
-   24
+   25
   ],
   [
    "Italy",
@@ -238,18 +238,18 @@
    16
   ],
   [
-   "Austria",
+   "Switzerland",
    13
   ],
   [
-   "China",
+   "Austria",
    13
   ]
  ],
  "per_day": [
   {
    "day": "Tue 17 Nov",
-   "Visitors": 483,
+   "Visitors": 490,
    "Premium Pass": 52,
    "Speakers": 1,
    "Exhibitors": 701
