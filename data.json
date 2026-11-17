@@ -1,24 +1,24 @@
 {
  "event": "PTXB6",
  "page": 11,
- "built": "2026-11-17 09:35:44",
- "built_ts": 1794904554276,
+ "built": "2026-11-17 09:41:59",
+ "built_ts": 1794904932549,
  "test": false,
  "mode": "attendance",
  "registration": {
-  "total": 1725,
+  "total": 1731,
   "groups": {
-   "Visitors": 1583,
+   "Visitors": 1589,
    "Premium Pass": 142,
    "Speakers": 29,
    "Exhibitors": 1041
   },
-  "today": 21,
-  "last7": 477,
+  "today": 27,
+  "last7": 483,
   "tso_orgs": 48,
   "tso_people": 125,
   "countries": 100,
-  "companies": 1072,
+  "companies": 1074,
   "daily": [
    {
     "d": "Wed 04",
@@ -74,13 +74,13 @@
    },
    {
     "d": "Tue 17",
-    "n": 21
+    "n": 27
    }
   ],
   "top_countries": [
    [
     "Germany",
-    678
+    683
    ],
    [
     "Turkey",
@@ -96,7 +96,7 @@
    ],
    [
     "India",
-    63
+    64
    ],
    [
     "Italy",
@@ -114,11 +114,11 @@
   "channels": [
    [
     "Website",
-    1273
+    1274
    ],
    [
     "No code",
-    304
+    305
    ],
    [
     "LinkedIn",
@@ -147,19 +147,19 @@
   ]
  },
  "today": {
-  "Visitors": 10,
+  "Visitors": 26,
   "Premium Pass": 7,
   "Speakers": 0,
-  "Exhibitors": 347
+  "Exhibitors": 394
  },
  "event_to_date": {
-  "Visitors": 10,
+  "Visitors": 26,
   "Premium Pass": 7,
   "Speakers": 0,
-  "Exhibitors": 347
+  "Exhibitors": 394
  },
  "registered": {
-  "Visitors": 1583,
+  "Visitors": 1589,
   "Premium Pass": 142,
   "Speakers": 2,
   "Exhibitors": 1041
@@ -170,11 +170,11 @@
  "tso_orgs_today": 3,
  "tso_people_event": 3,
  "tso_orgs_event": 3,
- "countries_today": 30,
- "countries_event": 30,
- "companies_today": 157,
- "companies_event": 157,
- "showup_pct": 1,
+ "countries_today": 32,
+ "countries_event": 32,
+ "companies_today": 183,
+ "companies_event": 183,
+ "showup_pct": 2,
  "hours": [
   {
    "h": "07",
@@ -188,14 +188,18 @@
   },
   {
    "h": "09",
-   "aud": 13,
-   "exh": 257
+   "aud": 29,
+   "exh": 304
   }
  ],
  "top_countries": [
   [
    "Germany",
-   7
+   13
+  ],
+  [
+   "Belgium",
+   4
   ],
   [
    "United Kingdom",
@@ -203,11 +207,15 @@
   ],
   [
    "Italy",
-   2
+   3
   ],
   [
-   "Belgium",
-   1
+   "Netherlands",
+   3
+  ],
+  [
+   "India",
+   2
   ],
   [
    "France",
@@ -216,23 +224,15 @@
   [
    "United States of America",
    1
-  ],
-  [
-   "Kenya",
-   1
-  ],
-  [
-   "India",
-   1
   ]
  ],
  "per_day": [
   {
    "day": "Tue 17 Nov",
-   "Visitors": 10,
+   "Visitors": 26,
    "Premium Pass": 7,
    "Speakers": 0,
-   "Exhibitors": 347
+   "Exhibitors": 394
   }
  ],
  "error": null
