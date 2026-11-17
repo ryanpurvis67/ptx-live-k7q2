@@ -1,20 +1,20 @@
 {
  "event": "PTXB6",
  "page": 11,
- "built": "2026-11-17 13:48:24",
- "built_ts": 1794919715457,
+ "built": "2026-11-17 13:54:41",
+ "built_ts": 1794920091854,
  "test": false,
  "mode": "attendance",
  "registration": {
-  "total": 1785,
+  "total": 1786,
   "groups": {
-   "Visitors": 1642,
+   "Visitors": 1643,
    "Premium Pass": 143,
    "Speakers": 30,
    "Exhibitors": 1065
   },
-  "today": 82,
-  "last7": 508,
+  "today": 83,
+  "last7": 509,
   "tso_orgs": 49,
   "tso_people": 126,
   "countries": 101,
@@ -74,13 +74,13 @@
    },
    {
     "d": "Tue 17",
-    "n": 82
+    "n": 83
    }
   ],
   "top_countries": [
    [
     "Germany",
-    706
+    707
    ],
    [
     "Turkey",
@@ -142,38 +142,38 @@
    ],
    [
     "Other",
-    12
+    13
    ]
   ]
  },
  "today": {
-  "Visitors": 500,
-  "Premium Pass": 52,
+  "Visitors": 505,
+  "Premium Pass": 53,
   "Speakers": 1,
-  "Exhibitors": 702
+  "Exhibitors": 703
  },
  "event_to_date": {
-  "Visitors": 500,
-  "Premium Pass": 52,
+  "Visitors": 505,
+  "Premium Pass": 53,
   "Speakers": 1,
-  "Exhibitors": 702
+  "Exhibitors": 703
  },
  "registered": {
-  "Visitors": 1642,
+  "Visitors": 1643,
   "Premium Pass": 143,
   "Speakers": 3,
   "Exhibitors": 1065
  },
  "speakers_merged": 27,
  "last15": 19,
- "tso_people_today": 49,
- "tso_orgs_today": 18,
- "tso_people_event": 49,
- "tso_orgs_event": 18,
+ "tso_people_today": 50,
+ "tso_orgs_today": 19,
+ "tso_people_event": 50,
+ "tso_orgs_event": 19,
  "countries_today": 57,
  "countries_event": 57,
- "companies_today": 571,
- "companies_event": 571,
+ "companies_today": 574,
+ "companies_event": 574,
  "showup_pct": 31,
  "hours": [
   {
@@ -208,14 +208,14 @@
   },
   {
    "h": "13",
-   "aud": 40,
-   "exh": 10
+   "aud": 46,
+   "exh": 11
   }
  ],
  "top_countries": [
   [
    "Germany",
-   219
+   222
   ],
   [
    "Turkey",
@@ -227,7 +227,7 @@
   ],
   [
    "United Kingdom",
-   25
+   27
   ],
   [
    "Italy",
@@ -249,10 +249,10 @@
  "per_day": [
   {
    "day": "Tue 17 Nov",
-   "Visitors": 500,
-   "Premium Pass": 52,
+   "Visitors": 505,
+   "Premium Pass": 53,
    "Speakers": 1,
-   "Exhibitors": 702
+   "Exhibitors": 703
   }
  ],
  "error": null
