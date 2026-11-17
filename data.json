@@ -1,24 +1,24 @@
 {
  "event": "PTXB6",
  "page": 11,
- "built": "2026-11-17 13:04:35",
- "built_ts": 1794917085001,
+ "built": "2026-11-17 13:10:50",
+ "built_ts": 1794917460619,
  "test": false,
  "mode": "attendance",
  "registration": {
-  "total": 1771,
+  "total": 1774,
   "groups": {
-   "Visitors": 1628,
+   "Visitors": 1631,
    "Premium Pass": 143,
    "Speakers": 30,
-   "Exhibitors": 1064
+   "Exhibitors": 1063
   },
-  "today": 68,
-  "last7": 500,
+  "today": 71,
+  "last7": 502,
   "tso_orgs": 49,
   "tso_people": 126,
   "countries": 101,
-  "companies": 1104,
+  "companies": 1106,
   "daily": [
    {
     "d": "Wed 04",
@@ -74,13 +74,13 @@
    },
    {
     "d": "Tue 17",
-    "n": 68
+    "n": 71
    }
   ],
   "top_countries": [
    [
     "Germany",
-    698
+    700
    ],
    [
     "Turkey",
@@ -114,11 +114,11 @@
   "channels": [
    [
     "Website",
-    1306
+    1308
    ],
    [
     "No code",
-    306
+    307
    ],
    [
     "LinkedIn",
@@ -147,33 +147,33 @@
   ]
  },
  "today": {
-  "Visitors": 463,
+  "Visitors": 469,
   "Premium Pass": 51,
   "Speakers": 1,
-  "Exhibitors": 693
+  "Exhibitors": 694
  },
  "event_to_date": {
-  "Visitors": 463,
+  "Visitors": 469,
   "Premium Pass": 51,
   "Speakers": 1,
-  "Exhibitors": 693
+  "Exhibitors": 694
  },
  "registered": {
-  "Visitors": 1628,
+  "Visitors": 1631,
   "Premium Pass": 143,
   "Speakers": 3,
-  "Exhibitors": 1064
+  "Exhibitors": 1063
  },
  "speakers_merged": 27,
- "last15": 16,
+ "last15": 17,
  "tso_people_today": 48,
  "tso_orgs_today": 18,
  "tso_people_event": 48,
  "tso_orgs_event": 18,
  "countries_today": 56,
  "countries_event": 56,
- "companies_today": 547,
- "companies_event": 547,
+ "companies_today": 552,
+ "companies_event": 552,
  "showup_pct": 29,
  "hours": [
   {
@@ -208,18 +208,18 @@
   },
   {
    "h": "13",
-   "aud": 2,
-   "exh": 1
+   "aud": 8,
+   "exh": 2
   }
  ],
  "top_countries": [
   [
    "Germany",
-   199
+   202
   ],
   [
    "Turkey",
-   39
+   40
   ],
   [
    "Netherlands",
@@ -249,10 +249,10 @@
  "per_day": [
   {
    "day": "Tue 17 Nov",
-   "Visitors": 463,
+   "Visitors": 469,
    "Premium Pass": 51,
    "Speakers": 1,
-   "Exhibitors": 693
+   "Exhibitors": 694
   }
  ],
  "error": null
