@@ -1,8 +1,8 @@
 {
  "event": "PTXB6",
  "page": 11,
- "built": "2026-11-17 11:36:20",
- "built_ts": 1794911792310,
+ "built": "2026-11-17 11:42:38",
+ "built_ts": 1794912167990,
  "test": false,
  "mode": "attendance",
  "registration": {
@@ -147,16 +147,16 @@
   ]
  },
  "today": {
-  "Visitors": 367,
+  "Visitors": 373,
   "Premium Pass": 38,
   "Speakers": 0,
-  "Exhibitors": 675
+  "Exhibitors": 678
  },
  "event_to_date": {
-  "Visitors": 367,
+  "Visitors": 373,
   "Premium Pass": 38,
   "Speakers": 0,
-  "Exhibitors": 675
+  "Exhibitors": 678
  },
  "registered": {
   "Visitors": 1608,
@@ -165,15 +165,15 @@
   "Exhibitors": 1062
  },
  "speakers_merged": 27,
- "last15": 30,
+ "last15": 23,
  "tso_people_today": 35,
  "tso_orgs_today": 17,
  "tso_people_event": 35,
  "tso_orgs_event": 17,
  "countries_today": 54,
  "countries_event": 54,
- "companies_today": 487,
- "companies_event": 487,
+ "companies_today": 492,
+ "companies_event": 492,
  "showup_pct": 23,
  "hours": [
   {
@@ -198,14 +198,14 @@
   },
   {
    "h": "11",
-   "aud": 80,
-   "exh": 20
+   "aud": 86,
+   "exh": 23
   }
  ],
  "top_countries": [
   [
    "Germany",
-   158
+   160
   ],
   [
    "Turkey",
@@ -213,7 +213,7 @@
   ],
   [
    "Netherlands",
-   22
+   23
   ],
   [
    "United Kingdom",
@@ -229,7 +229,7 @@
   ],
   [
    "Switzerland",
-   11
+   12
   ],
   [
    "Austria",
@@ -239,10 +239,10 @@
  "per_day": [
   {
    "day": "Tue 17 Nov",
-   "Visitors": 367,
+   "Visitors": 373,
    "Premium Pass": 38,
    "Speakers": 0,
-   "Exhibitors": 675
+   "Exhibitors": 678
   }
  ],
  "error": null
