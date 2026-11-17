@@ -1,24 +1,24 @@
 {
  "event": "PTXB6",
  "page": 11,
- "built": "2026-11-17 14:38:33",
- "built_ts": 1794922723963,
+ "built": "2026-11-17 14:44:49",
+ "built_ts": 1794923099292,
  "test": false,
  "mode": "attendance",
  "registration": {
-  "total": 1792,
+  "total": 1793,
   "groups": {
-   "Visitors": 1649,
+   "Visitors": 1650,
    "Premium Pass": 143,
    "Speakers": 30,
    "Exhibitors": 1066
   },
-  "today": 89,
-  "last7": 512,
+  "today": 90,
+  "last7": 513,
   "tso_orgs": 49,
   "tso_people": 126,
   "countries": 101,
-  "companies": 1116,
+  "companies": 1117,
   "daily": [
    {
     "d": "Wed 04",
@@ -74,7 +74,7 @@
    },
    {
     "d": "Tue 17",
-    "n": 89
+    "n": 90
    }
   ],
   "top_countries": [
@@ -88,7 +88,7 @@
    ],
    [
     "United Kingdom",
-    92
+    93
    ],
    [
     "Netherlands",
@@ -114,7 +114,7 @@
   "channels": [
    [
     "Website",
-    1319
+    1320
    ],
    [
     "No code",
@@ -147,33 +147,33 @@
   ]
  },
  "today": {
-  "Visitors": 530,
+  "Visitors": 531,
   "Premium Pass": 55,
   "Speakers": 1,
-  "Exhibitors": 706
+  "Exhibitors": 707
  },
  "event_to_date": {
-  "Visitors": 530,
+  "Visitors": 531,
   "Premium Pass": 55,
   "Speakers": 1,
-  "Exhibitors": 706
+  "Exhibitors": 707
  },
  "registered": {
-  "Visitors": 1649,
+  "Visitors": 1650,
   "Premium Pass": 143,
   "Speakers": 3,
   "Exhibitors": 1066
  },
  "speakers_merged": 27,
- "last15": 7,
+ "last15": 8,
  "tso_people_today": 52,
  "tso_orgs_today": 20,
  "tso_people_event": 52,
  "tso_orgs_event": 20,
  "countries_today": 57,
  "countries_event": 57,
- "companies_today": 589,
- "companies_event": 589,
+ "companies_today": 590,
+ "companies_event": 590,
  "showup_pct": 33,
  "hours": [
   {
@@ -213,8 +213,8 @@
   },
   {
    "h": "14",
-   "aud": 25,
-   "exh": 3
+   "aud": 26,
+   "exh": 4
   }
  ],
  "top_countries": [
@@ -248,16 +248,16 @@
   ],
   [
    "China",
-   14
+   15
   ]
  ],
  "per_day": [
   {
    "day": "Tue 17 Nov",
-   "Visitors": 530,
+   "Visitors": 531,
    "Premium Pass": 55,
    "Speakers": 1,
-   "Exhibitors": 706
+   "Exhibitors": 707
   }
  ],
  "error": null
