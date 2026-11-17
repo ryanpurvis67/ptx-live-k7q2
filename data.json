@@ -1,24 +1,24 @@
 {
  "event": "PTXB6",
  "page": 11,
- "built": "2026-11-17 09:26:14",
- "built_ts": 1794907574849,
+ "built": "2026-11-17 10:32:23",
+ "built_ts": 1794907952991,
  "test": false,
  "mode": "attendance",
  "registration": {
-  "total": 1733,
+  "total": 1736,
   "groups": {
-   "Visitors": 1591,
-   "Premium Pass": 142,
+   "Visitors": 1592,
+   "Premium Pass": 144,
    "Speakers": 29,
-   "Exhibitors": 1053
+   "Exhibitors": 1055
   },
-  "today": 32,
-  "last7": 482,
+  "today": 35,
+  "last7": 483,
   "tso_orgs": 48,
   "tso_people": 125,
   "countries": 100,
-  "companies": 1078,
+  "companies": 1079,
   "daily": [
    {
     "d": "Wed 04",
@@ -74,13 +74,13 @@
    },
    {
     "d": "Tue 17",
-    "n": 32
+    "n": 35
    }
   ],
   "top_countries": [
    [
     "Germany",
-    684
+    687
    ],
    [
     "Turkey",
@@ -114,7 +114,7 @@
   "channels": [
    [
     "Website",
-    1277
+    1279
    ],
    [
     "No code",
@@ -147,34 +147,34 @@
   ]
  },
  "today": {
-  "Visitors": 147,
-  "Premium Pass": 22,
+  "Visitors": 199,
+  "Premium Pass": 27,
   "Speakers": 0,
-  "Exhibitors": 605
+  "Exhibitors": 627
  },
  "event_to_date": {
-  "Visitors": 147,
-  "Premium Pass": 22,
+  "Visitors": 199,
+  "Premium Pass": 27,
   "Speakers": 0,
-  "Exhibitors": 605
+  "Exhibitors": 627
  },
  "registered": {
-  "Visitors": 1591,
-  "Premium Pass": 142,
+  "Visitors": 1592,
+  "Premium Pass": 144,
   "Speakers": 2,
-  "Exhibitors": 1053
+  "Exhibitors": 1055
  },
  "speakers_merged": 27,
- "last15": 101,
- "tso_people_today": 19,
- "tso_orgs_today": 9,
- "tso_people_event": 19,
- "tso_orgs_event": 9,
- "countries_today": 43,
- "countries_event": 43,
- "companies_today": 325,
- "companies_event": 325,
- "showup_pct": 10,
+ "last15": 94,
+ "tso_people_today": 23,
+ "tso_orgs_today": 12,
+ "tso_people_event": 23,
+ "tso_orgs_event": 12,
+ "countries_today": 46,
+ "countries_event": 46,
+ "companies_today": 364,
+ "companies_event": 364,
+ "showup_pct": 13,
  "hours": [
   {
    "h": "07",
@@ -193,29 +193,33 @@
   },
   {
    "h": "10",
-   "aud": 69,
-   "exh": 64
+   "aud": 126,
+   "exh": 86
   }
  ],
  "top_countries": [
   [
    "Germany",
-   70
+   95
   ],
   [
    "Italy",
-   13
+   17
+  ],
+  [
+   "United Kingdom",
+   11
   ],
   [
    "Turkey",
    11
   ],
   [
-   "United Kingdom",
-   9
+   "Austria",
+   10
   ],
   [
-   "Austria",
+   "Switzerland",
    8
   ],
   [
@@ -225,20 +229,16 @@
   [
    "Belgium",
    6
-  ],
-  [
-   "China",
-   5
   ]
  ],
  "per_day": [
   {
    "day": "Tue 17 Nov",
-   "Visitors": 147,
-   "Premium Pass": 22,
+   "Visitors": 199,
+   "Premium Pass": 27,
    "Speakers": 0,
-   "Exhibitors": 605
+   "Exhibitors": 627
   }
  ],
- "error": "JET pull failed: URLError"
+ "error": null
 }
