@@ -1,8 +1,8 @@
 {
  "event": "PTXB6",
  "page": 13,
- "built": "2026-11-18 15:48:00",
- "built_ts": 1795013294898,
+ "built": "2026-11-18 15:54:24",
+ "built_ts": 1795013679589,
  "test": false,
  "mode": "attendance",
  "registration": {
@@ -150,7 +150,7 @@
   "Visitors": 641,
   "Premium Pass": 56,
   "Speakers": 2,
-  "Exhibitors": 570
+  "Exhibitors": 571
  },
  "event_to_date": {
   "Visitors": 997,
@@ -162,7 +162,7 @@
   "Visitors": 1228,
   "Premium Pass": 116,
   "Speakers": 3,
-  "Exhibitors": 1291
+  "Exhibitors": 1292
  },
  "returning": 261,
  "registered": {
@@ -221,7 +221,7 @@
   {
    "h": "15",
    "aud": 5,
-   "exh": 4
+   "exh": 5
   }
  ],
  "top_countries": [
@@ -271,7 +271,7 @@
    "Visitors": 641,
    "Premium Pass": 56,
    "Speakers": 2,
-   "Exhibitors": 570
+   "Exhibitors": 571
   }
  ],
  "past_days": [
