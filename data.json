@@ -1,8 +1,8 @@
 {
  "event": "PTXB6",
  "page": 13,
- "built": "2026-11-18 23:58:32",
- "built_ts": 1795042723566,
+ "built": "2026-11-19 00:04:49",
+ "built_ts": 1795043102644,
  "test": false,
  "mode": "attendance",
  "registration": {
@@ -13,17 +13,13 @@
    "Speakers": 30,
    "Exhibitors": 1075
   },
-  "today": 71,
+  "today": 0,
   "last7": 569,
   "tso_orgs": 51,
   "tso_people": 128,
   "countries": 101,
   "companies": 1183,
   "daily": [
-   {
-    "d": "Thu 05",
-    "n": 34
-   },
    {
     "d": "Fri 06",
     "n": 32
@@ -75,6 +71,10 @@
    {
     "d": "Wed 18",
     "n": 71
+   },
+   {
+    "d": "Thu 19",
+    "n": 0
    }
   ],
   "top_countries": [
@@ -147,10 +147,10 @@
   ]
  },
  "today": {
-  "Visitors": 648,
-  "Premium Pass": 60,
-  "Speakers": 2,
-  "Exhibitors": 578
+  "Visitors": 0,
+  "Premium Pass": 0,
+  "Speakers": 0,
+  "Exhibitors": 0
  },
  "event_to_date": {
   "Visitors": 1003,
@@ -173,101 +173,17 @@
  },
  "speakers_merged": 28,
  "last15": 0,
- "tso_people_today": 57,
- "tso_orgs_today": 21,
+ "tso_people_today": 0,
+ "tso_orgs_today": 0,
  "tso_people_event": 85,
  "tso_orgs_event": 28,
- "countries_today": 66,
+ "countries_today": 0,
  "countries_event": 69,
- "companies_today": 685,
+ "companies_today": 0,
  "companies_event": 901,
  "showup_pct": 57,
- "hours": [
-  {
-   "h": "08",
-   "aud": 2,
-   "exh": 23
-  },
-  {
-   "h": "09",
-   "aud": 83,
-   "exh": 303
-  },
-  {
-   "h": "10",
-   "aud": 343,
-   "exh": 158
-  },
-  {
-   "h": "11",
-   "aud": 124,
-   "exh": 38
-  },
-  {
-   "h": "12",
-   "aud": 77,
-   "exh": 21
-  },
-  {
-   "h": "13",
-   "aud": 42,
-   "exh": 15
-  },
-  {
-   "h": "14",
-   "aud": 23,
-   "exh": 8
-  },
-  {
-   "h": "15",
-   "aud": 5,
-   "exh": 6
-  },
-  {
-   "h": "16",
-   "aud": 9,
-   "exh": 6
-  },
-  {
-   "h": "17",
-   "aud": 2,
-   "exh": 0
-  }
- ],
- "top_countries": [
-  [
-   "Germany",
-   324
-  ],
-  [
-   "Netherlands",
-   37
-  ],
-  [
-   "United Kingdom",
-   31
-  ],
-  [
-   "Turkey",
-   27
-  ],
-  [
-   "China",
-   25
-  ],
-  [
-   "Italy",
-   21
-  ],
-  [
-   "Austria",
-   18
-  ],
-  [
-   "Switzerland",
-   17
-  ]
- ],
+ "hours": [],
+ "top_countries": [],
  "per_day": [
   {
    "day": "Tue 17 Nov",
@@ -285,6 +201,109 @@
   }
  ],
  "past_days": [
+  {
+   "date": "2026-11-18",
+   "day": "Wed 18 Nov",
+   "tab": "Wed 18",
+   "groups": {
+    "Visitors": 648,
+    "Premium Pass": 60,
+    "Speakers": 2,
+    "Exhibitors": 578
+   },
+   "new": 445,
+   "returning": 265,
+   "tso_people": 57,
+   "tso_orgs": 21,
+   "countries": 66,
+   "companies": 685,
+   "hours": [
+    {
+     "h": "08",
+     "aud": 2,
+     "exh": 23
+    },
+    {
+     "h": "09",
+     "aud": 83,
+     "exh": 303
+    },
+    {
+     "h": "10",
+     "aud": 343,
+     "exh": 158
+    },
+    {
+     "h": "11",
+     "aud": 124,
+     "exh": 38
+    },
+    {
+     "h": "12",
+     "aud": 77,
+     "exh": 21
+    },
+    {
+     "h": "13",
+     "aud": 42,
+     "exh": 15
+    },
+    {
+     "h": "14",
+     "aud": 23,
+     "exh": 8
+    },
+    {
+     "h": "15",
+     "aud": 5,
+     "exh": 6
+    },
+    {
+     "h": "16",
+     "aud": 9,
+     "exh": 6
+    },
+    {
+     "h": "17",
+     "aud": 2,
+     "exh": 0
+    }
+   ],
+   "top_countries": [
+    [
+     "Germany",
+     324
+    ],
+    [
+     "Netherlands",
+     37
+    ],
+    [
+     "United Kingdom",
+     31
+    ],
+    [
+     "Turkey",
+     27
+    ],
+    [
+     "China",
+     25
+    ],
+    [
+     "Italy",
+     21
+    ],
+    [
+     "Austria",
+     18
+    ],
+    [
+     "Switzerland",
+     17
+    ]
+   ]
+  },
   {
    "date": "2026-11-17",
    "day": "Tue 17 Nov",
