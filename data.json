@@ -1,24 +1,24 @@
 {
  "event": "PTXB6",
  "page": 13,
- "built": "2026-11-18 14:44:17",
- "built_ts": 1795009470798,
+ "built": "2026-11-18 14:50:38",
+ "built_ts": 1795009849577,
  "test": false,
  "mode": "attendance",
  "registration": {
-  "total": 1893,
+  "total": 1895,
   "groups": {
-   "Visitors": 1748,
+   "Visitors": 1750,
    "Premium Pass": 145,
    "Speakers": 30,
    "Exhibitors": 1075
   },
-  "today": 57,
-  "last7": 567,
+  "today": 59,
+  "last7": 568,
   "tso_orgs": 51,
   "tso_people": 128,
   "countries": 101,
-  "companies": 1175,
+  "companies": 1176,
   "daily": [
    {
     "d": "Thu 05",
@@ -74,13 +74,13 @@
    },
    {
     "d": "Wed 18",
-    "n": 57
+    "n": 59
    }
   ],
   "top_countries": [
    [
     "Germany",
-    765
+    767
    ],
    [
     "Turkey",
@@ -114,11 +114,11 @@
   "channels": [
    [
     "Website",
-    1394
+    1395
    ],
    [
     "No code",
-    314
+    315
    ],
    [
     "LinkedIn",
@@ -147,7 +147,7 @@
   ]
  },
  "today": {
-  "Visitors": 633,
+  "Visitors": 634,
   "Premium Pass": 56,
   "Speakers": 2,
   "Exhibitors": 565
@@ -159,27 +159,27 @@
   "Exhibitors": 797
  },
  "event_visits": {
-  "Visitors": 1220,
+  "Visitors": 1221,
   "Premium Pass": 116,
   "Speakers": 3,
   "Exhibitors": 1286
  },
- "returning": 260,
+ "returning": 261,
  "registered": {
-  "Visitors": 1748,
+  "Visitors": 1750,
   "Premium Pass": 145,
   "Speakers": 3,
   "Exhibitors": 1075
  },
  "speakers_merged": 28,
- "last15": 9,
+ "last15": 6,
  "tso_people_today": 53,
  "tso_orgs_today": 19,
  "tso_people_event": 84,
  "tso_orgs_event": 27,
  "countries_today": 63,
  "countries_event": 67,
- "companies_today": 670,
+ "companies_today": 671,
  "companies_event": 891,
  "showup_pct": 57,
  "hours": [
@@ -215,14 +215,14 @@
   },
   {
    "h": "14",
-   "aud": 20,
+   "aud": 21,
    "exh": 7
   }
  ],
  "top_countries": [
   [
    "Germany",
-   314
+   315
   ],
   [
    "Netherlands",
@@ -263,7 +263,7 @@
   },
   {
    "day": "Wed 18 Nov",
-   "Visitors": 633,
+   "Visitors": 634,
    "Premium Pass": 56,
    "Speakers": 2,
    "Exhibitors": 565
