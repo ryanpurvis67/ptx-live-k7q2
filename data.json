@@ -1,8 +1,8 @@
 {
  "event": "PTXB6",
  "page": 13,
- "built": "2026-11-18 13:22:08",
- "built_ts": 1795004542213,
+ "built": "2026-11-18 13:28:28",
+ "built_ts": 1795004920718,
  "test": false,
  "mode": "attendance",
  "registration": {
@@ -11,7 +11,7 @@
    "Visitors": 1744,
    "Premium Pass": 145,
    "Speakers": 30,
-   "Exhibitors": 1075
+   "Exhibitors": 1076
   },
   "today": 54,
   "last7": 569,
@@ -147,40 +147,40 @@
   ]
  },
  "today": {
-  "Visitors": 596,
-  "Premium Pass": 48,
+  "Visitors": 604,
+  "Premium Pass": 49,
   "Speakers": 2,
-  "Exhibitors": 545
+  "Exhibitors": 548
  },
  "event_to_date": {
-  "Visitors": 970,
-  "Premium Pass": 80,
+  "Visitors": 976,
+  "Premium Pass": 81,
   "Speakers": 2,
-  "Exhibitors": 792
+  "Exhibitors": 793
  },
  "event_visits": {
-  "Visitors": 1183,
-  "Premium Pass": 108,
+  "Visitors": 1191,
+  "Premium Pass": 109,
   "Speakers": 3,
-  "Exhibitors": 1266
+  "Exhibitors": 1269
  },
- "returning": 242,
+ "returning": 244,
  "registered": {
   "Visitors": 1744,
   "Premium Pass": 145,
   "Speakers": 3,
-  "Exhibitors": 1075
+  "Exhibitors": 1076
  },
  "speakers_merged": 27,
- "last15": 17,
- "tso_people_today": 46,
+ "last15": 23,
+ "tso_people_today": 47,
  "tso_orgs_today": 18,
- "tso_people_event": 78,
+ "tso_people_event": 79,
  "tso_orgs_event": 26,
  "countries_today": 61,
  "countries_event": 66,
- "companies_today": 644,
- "companies_event": 876,
+ "companies_today": 649,
+ "companies_event": 879,
  "showup_pct": 56,
  "hours": [
   {
@@ -210,14 +210,14 @@
   },
   {
    "h": "13",
-   "aud": 17,
-   "exh": 1
+   "aud": 26,
+   "exh": 4
   }
  ],
  "top_countries": [
   [
    "Germany",
-   293
+   299
   ],
   [
    "Netherlands",
@@ -225,7 +225,7 @@
   ],
   [
    "United Kingdom",
-   28
+   30
   ],
   [
    "Turkey",
@@ -258,10 +258,10 @@
   },
   {
    "day": "Wed 18 Nov",
-   "Visitors": 596,
-   "Premium Pass": 48,
+   "Visitors": 604,
+   "Premium Pass": 49,
    "Speakers": 2,
-   "Exhibitors": 545
+   "Exhibitors": 548
   }
  ],
  "past_days": [
