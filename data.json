@@ -1,8 +1,8 @@
 {
  "event": "PTXB6",
  "page": 13,
- "built": "2026-11-18 16:07:14",
- "built_ts": 1795014451114,
+ "built": "2026-11-18 16:13:38",
+ "built_ts": 1795014833858,
  "test": false,
  "mode": "attendance",
  "registration": {
@@ -148,9 +148,9 @@
  },
  "today": {
   "Visitors": 641,
-  "Premium Pass": 56,
+  "Premium Pass": 59,
   "Speakers": 2,
-  "Exhibitors": 572
+  "Exhibitors": 573
  },
  "event_to_date": {
   "Visitors": 997,
@@ -160,11 +160,11 @@
  },
  "event_visits": {
   "Visitors": 1228,
-  "Premium Pass": 116,
+  "Premium Pass": 119,
   "Speakers": 3,
-  "Exhibitors": 1293
+  "Exhibitors": 1294
  },
- "returning": 261,
+ "returning": 264,
  "registered": {
   "Visitors": 1752,
   "Premium Pass": 145,
@@ -172,14 +172,14 @@
   "Exhibitors": 1075
  },
  "speakers_merged": 28,
- "last15": 1,
- "tso_people_today": 53,
- "tso_orgs_today": 19,
+ "last15": 4,
+ "tso_people_today": 56,
+ "tso_orgs_today": 20,
  "tso_people_event": 84,
  "tso_orgs_event": 27,
- "countries_today": 63,
+ "countries_today": 64,
  "countries_event": 67,
- "companies_today": 677,
+ "companies_today": 679,
  "companies_event": 895,
  "showup_pct": 57,
  "hours": [
@@ -222,6 +222,11 @@
    "h": "15",
    "aud": 5,
    "exh": 6
+  },
+  {
+   "h": "16",
+   "aud": 3,
+   "exh": 1
   }
  ],
  "top_countries": [
@@ -269,9 +274,9 @@
   {
    "day": "Wed 18 Nov",
    "Visitors": 641,
-   "Premium Pass": 56,
+   "Premium Pass": 59,
    "Speakers": 2,
-   "Exhibitors": 572
+   "Exhibitors": 573
   }
  ],
  "past_days": [
