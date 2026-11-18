@@ -1,24 +1,24 @@
 {
  "event": "PTXB6",
  "page": 13,
- "built": "2026-11-18 11:40:59",
- "built_ts": 1794998470438,
+ "built": "2026-11-18 11:47:15",
+ "built_ts": 1794998848309,
  "test": false,
  "mode": "attendance",
  "registration": {
-  "total": 1880,
+  "total": 1881,
   "groups": {
-   "Visitors": 1735,
+   "Visitors": 1736,
    "Premium Pass": 145,
    "Speakers": 30,
    "Exhibitors": 1075
   },
-  "today": 45,
-  "last7": 564,
+  "today": 46,
+  "last7": 565,
   "tso_orgs": 51,
   "tso_people": 128,
   "countries": 101,
-  "companies": 1166,
+  "companies": 1167,
   "daily": [
    {
     "d": "Thu 05",
@@ -74,7 +74,7 @@
    },
    {
     "d": "Wed 18",
-    "n": 45
+    "n": 46
    }
   ],
   "top_countries": [
@@ -114,7 +114,7 @@
   "channels": [
    [
     "Website",
-    1384
+    1385
    ],
    [
     "No code",
@@ -147,40 +147,40 @@
   ]
  },
  "today": {
-  "Visitors": 489,
+  "Visitors": 496,
   "Premium Pass": 43,
   "Speakers": 2,
-  "Exhibitors": 514
+  "Exhibitors": 519
  },
  "event_to_date": {
-  "Visitors": 890,
+  "Visitors": 896,
   "Premium Pass": 79,
   "Speakers": 2,
-  "Exhibitors": 779
+  "Exhibitors": 782
  },
  "event_visits": {
-  "Visitors": 1076,
+  "Visitors": 1083,
   "Premium Pass": 103,
   "Speakers": 3,
-  "Exhibitors": 1235
+  "Exhibitors": 1240
  },
- "returning": 211,
+ "returning": 212,
  "registered": {
-  "Visitors": 1735,
+  "Visitors": 1736,
   "Premium Pass": 145,
   "Speakers": 3,
   "Exhibitors": 1075
  },
  "speakers_merged": 27,
- "last15": 40,
+ "last15": 34,
  "tso_people_today": 41,
  "tso_orgs_today": 16,
  "tso_people_event": 77,
  "tso_orgs_event": 25,
  "countries_today": 55,
  "countries_event": 64,
- "companies_today": 567,
- "companies_event": 819,
+ "companies_today": 573,
+ "companies_event": 824,
  "showup_pct": 52,
  "hours": [
   {
@@ -200,14 +200,14 @@
   },
   {
    "h": "11",
-   "aud": 106,
-   "exh": 29
+   "aud": 113,
+   "exh": 34
   }
  ],
  "top_countries": [
   [
    "Germany",
-   240
+   245
   ],
   [
    "Netherlands",
@@ -226,12 +226,12 @@
    18
   ],
   [
-   "Switzerland",
+   "Turkey",
    17
   ],
   [
-   "Turkey",
-   16
+   "Switzerland",
+   17
   ],
   [
    "Austria",
@@ -248,10 +248,10 @@
   },
   {
    "day": "Wed 18 Nov",
-   "Visitors": 489,
+   "Visitors": 496,
    "Premium Pass": 43,
    "Speakers": 2,
-   "Exhibitors": 514
+   "Exhibitors": 519
   }
  ],
  "past_days": [
