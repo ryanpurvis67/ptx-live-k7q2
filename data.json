@@ -1,8 +1,8 @@
 {
  "event": "PTXB6",
  "page": 13,
- "built": "2026-11-18 11:47:15",
- "built_ts": 1794998848309,
+ "built": "2026-11-18 11:53:34",
+ "built_ts": 1794999226901,
  "test": false,
  "mode": "attendance",
  "registration": {
@@ -147,24 +147,24 @@
   ]
  },
  "today": {
-  "Visitors": 496,
+  "Visitors": 500,
   "Premium Pass": 43,
   "Speakers": 2,
-  "Exhibitors": 519
+  "Exhibitors": 521
  },
  "event_to_date": {
-  "Visitors": 896,
+  "Visitors": 899,
   "Premium Pass": 79,
   "Speakers": 2,
-  "Exhibitors": 782
+  "Exhibitors": 783
  },
  "event_visits": {
-  "Visitors": 1083,
+  "Visitors": 1087,
   "Premium Pass": 103,
   "Speakers": 3,
-  "Exhibitors": 1240
+  "Exhibitors": 1242
  },
- "returning": 212,
+ "returning": 213,
  "registered": {
   "Visitors": 1736,
   "Premium Pass": 145,
@@ -172,15 +172,15 @@
   "Exhibitors": 1075
  },
  "speakers_merged": 27,
- "last15": 34,
+ "last15": 22,
  "tso_people_today": 41,
  "tso_orgs_today": 16,
  "tso_people_event": 77,
  "tso_orgs_event": 25,
  "countries_today": 55,
  "countries_event": 64,
- "companies_today": 573,
- "companies_event": 824,
+ "companies_today": 576,
+ "companies_event": 826,
  "showup_pct": 52,
  "hours": [
   {
@@ -200,14 +200,14 @@
   },
   {
    "h": "11",
-   "aud": 113,
-   "exh": 34
+   "aud": 117,
+   "exh": 36
   }
  ],
  "top_countries": [
   [
    "Germany",
-   245
+   246
   ],
   [
    "Netherlands",
@@ -227,7 +227,7 @@
   ],
   [
    "Turkey",
-   17
+   18
   ],
   [
    "Switzerland",
@@ -248,10 +248,10 @@
   },
   {
    "day": "Wed 18 Nov",
-   "Visitors": 496,
+   "Visitors": 500,
    "Premium Pass": 43,
    "Speakers": 2,
-   "Exhibitors": 519
+   "Exhibitors": 521
   }
  ],
  "past_days": [
