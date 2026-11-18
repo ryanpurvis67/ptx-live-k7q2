@@ -1,8 +1,8 @@
 {
  "event": "PTXB6",
  "page": 13,
- "built": "2026-11-18 15:03:14",
- "built_ts": 1795010607687,
+ "built": "2026-11-18 15:09:33",
+ "built_ts": 1795010990191,
  "test": false,
  "mode": "attendance",
  "registration": {
@@ -147,19 +147,19 @@
   ]
  },
  "today": {
-  "Visitors": 636,
+  "Visitors": 638,
   "Premium Pass": 56,
   "Speakers": 2,
   "Exhibitors": 567
  },
  "event_to_date": {
-  "Visitors": 992,
+  "Visitors": 994,
   "Premium Pass": 87,
   "Speakers": 2,
   "Exhibitors": 799
  },
  "event_visits": {
-  "Visitors": 1223,
+  "Visitors": 1225,
   "Premium Pass": 116,
   "Speakers": 3,
   "Exhibitors": 1288
@@ -172,15 +172,15 @@
   "Exhibitors": 1075
  },
  "speakers_merged": 28,
- "last15": 4,
+ "last15": 5,
  "tso_people_today": 53,
  "tso_orgs_today": 19,
  "tso_people_event": 84,
  "tso_orgs_event": 27,
  "countries_today": 63,
  "countries_event": 67,
- "companies_today": 673,
- "companies_event": 893,
+ "companies_today": 674,
+ "companies_event": 894,
  "showup_pct": 57,
  "hours": [
   {
@@ -220,14 +220,14 @@
   },
   {
    "h": "15",
-   "aud": 0,
+   "aud": 2,
    "exh": 1
   }
  ],
  "top_countries": [
   [
    "Germany",
-   316
+   318
   ],
   [
    "Netherlands",
@@ -268,7 +268,7 @@
   },
   {
    "day": "Wed 18 Nov",
-   "Visitors": 636,
+   "Visitors": 638,
    "Premium Pass": 56,
    "Speakers": 2,
    "Exhibitors": 567
