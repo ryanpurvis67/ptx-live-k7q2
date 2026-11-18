@@ -1,20 +1,20 @@
 {
  "event": "PTXB6",
  "page": 13,
- "built": "2026-11-18 11:34:42",
- "built_ts": 1794998093612,
+ "built": "2026-11-18 11:40:59",
+ "built_ts": 1794998470438,
  "test": false,
  "mode": "attendance",
  "registration": {
-  "total": 1879,
+  "total": 1880,
   "groups": {
-   "Visitors": 1734,
+   "Visitors": 1735,
    "Premium Pass": 145,
    "Speakers": 30,
    "Exhibitors": 1075
   },
-  "today": 44,
-  "last7": 563,
+  "today": 45,
+  "last7": 564,
   "tso_orgs": 51,
   "tso_people": 128,
   "countries": 101,
@@ -74,7 +74,7 @@
    },
    {
     "d": "Wed 18",
-    "n": 44
+    "n": 45
    }
   ],
   "top_countries": [
@@ -114,7 +114,7 @@
   "channels": [
    [
     "Website",
-    1383
+    1384
    ],
    [
     "No code",
@@ -147,41 +147,41 @@
   ]
  },
  "today": {
-  "Visitors": 482,
-  "Premium Pass": 41,
+  "Visitors": 489,
+  "Premium Pass": 43,
   "Speakers": 2,
-  "Exhibitors": 510
+  "Exhibitors": 514
  },
  "event_to_date": {
-  "Visitors": 887,
-  "Premium Pass": 77,
+  "Visitors": 890,
+  "Premium Pass": 79,
   "Speakers": 2,
   "Exhibitors": 779
  },
  "event_visits": {
-  "Visitors": 1069,
-  "Premium Pass": 101,
+  "Visitors": 1076,
+  "Premium Pass": 103,
   "Speakers": 3,
-  "Exhibitors": 1231
+  "Exhibitors": 1235
  },
- "returning": 207,
+ "returning": 211,
  "registered": {
-  "Visitors": 1734,
+  "Visitors": 1735,
   "Premium Pass": 145,
   "Speakers": 3,
   "Exhibitors": 1075
  },
  "speakers_merged": 27,
- "last15": 50,
- "tso_people_today": 39,
+ "last15": 40,
+ "tso_people_today": 41,
  "tso_orgs_today": 16,
- "tso_people_event": 75,
+ "tso_people_event": 77,
  "tso_orgs_event": 25,
- "countries_today": 54,
+ "countries_today": 55,
  "countries_event": 64,
- "companies_today": 561,
- "companies_event": 818,
- "showup_pct": 51,
+ "companies_today": 567,
+ "companies_event": 819,
+ "showup_pct": 52,
  "hours": [
   {
    "h": "08",
@@ -200,14 +200,14 @@
   },
   {
    "h": "11",
-   "aud": 97,
-   "exh": 25
+   "aud": 106,
+   "exh": 29
   }
  ],
  "top_countries": [
   [
    "Germany",
-   236
+   240
   ],
   [
    "Netherlands",
@@ -248,10 +248,10 @@
   },
   {
    "day": "Wed 18 Nov",
-   "Visitors": 482,
-   "Premium Pass": 41,
+   "Visitors": 489,
+   "Premium Pass": 43,
    "Speakers": 2,
-   "Exhibitors": 510
+   "Exhibitors": 514
   }
  ],
  "past_days": [
