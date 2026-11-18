@@ -1,24 +1,24 @@
 {
  "event": "PTXB6",
  "page": 13,
- "built": "2026-11-18 12:03:23",
- "built_ts": 1795003403045,
+ "built": "2026-11-18 13:09:32",
+ "built_ts": 1795003784518,
  "test": false,
  "mode": "attendance",
  "registration": {
-  "total": 1886,
+  "total": 1888,
   "groups": {
-   "Visitors": 1741,
+   "Visitors": 1743,
    "Premium Pass": 145,
    "Speakers": 30,
    "Exhibitors": 1075
   },
-  "today": 51,
-  "last7": 567,
+  "today": 53,
+  "last7": 568,
   "tso_orgs": 51,
   "tso_people": 128,
   "countries": 101,
-  "companies": 1170,
+  "companies": 1171,
   "daily": [
    {
     "d": "Thu 05",
@@ -74,13 +74,13 @@
    },
    {
     "d": "Wed 18",
-    "n": 51
+    "n": 53
    }
   ],
   "top_countries": [
    [
     "Germany",
-    758
+    760
    ],
    [
     "Turkey",
@@ -114,7 +114,7 @@
   "channels": [
    [
     "Website",
-    1389
+    1391
    ],
    [
     "No code",
@@ -147,10 +147,10 @@
   ]
  },
  "today": {
-  "Visitors": 578,
+  "Visitors": 580,
   "Premium Pass": 48,
   "Speakers": 2,
-  "Exhibitors": 543
+  "Exhibitors": 545
  },
  "event_to_date": {
   "Visitors": 956,
@@ -159,27 +159,27 @@
   "Exhibitors": 792
  },
  "event_visits": {
-  "Visitors": 1165,
+  "Visitors": 1167,
   "Premium Pass": 108,
   "Speakers": 3,
-  "Exhibitors": 1264
+  "Exhibitors": 1266
  },
- "returning": 238,
+ "returning": 240,
  "registered": {
-  "Visitors": 1741,
+  "Visitors": 1743,
   "Premium Pass": 145,
   "Speakers": 3,
   "Exhibitors": 1075
  },
  "speakers_merged": 27,
- "last15": 21,
+ "last15": 6,
  "tso_people_today": 46,
  "tso_orgs_today": 18,
  "tso_people_event": 78,
  "tso_orgs_event": 26,
- "countries_today": 59,
+ "countries_today": 60,
  "countries_event": 66,
- "companies_today": 630,
+ "companies_today": 632,
  "companies_event": 866,
  "showup_pct": 55,
  "hours": [
@@ -205,8 +205,13 @@
   },
   {
    "h": "12",
-   "aud": 76,
-   "exh": 20
+   "aud": 77,
+   "exh": 21
+  },
+  {
+   "h": "13",
+   "aud": 1,
+   "exh": 1
   }
  ],
  "top_countries": [
@@ -228,7 +233,7 @@
   ],
   [
    "Turkey",
-   21
+   22
   ],
   [
    "Italy",
@@ -253,10 +258,10 @@
   },
   {
    "day": "Wed 18 Nov",
-   "Visitors": 578,
+   "Visitors": 580,
    "Premium Pass": 48,
    "Speakers": 2,
-   "Exhibitors": 543
+   "Exhibitors": 545
   }
  ],
  "past_days": [
@@ -364,5 +369,5 @@
    ]
   }
  ],
- "error": "JET pull failed: URLError"
+ "error": null
 }
