@@ -1,24 +1,24 @@
 {
  "event": "PTXB6",
  "page": 12,
- "built": "2026-11-18 08:20:50",
- "built_ts": 1794986461381,
+ "built": "2026-11-18 08:27:06",
+ "built_ts": 1794986837239,
  "test": false,
  "mode": "attendance",
  "registration": {
-  "total": 1843,
+  "total": 1845,
   "groups": {
-   "Visitors": 1699,
+   "Visitors": 1701,
    "Premium Pass": 144,
    "Speakers": 30,
    "Exhibitors": 1071
   },
-  "today": 8,
-  "last7": 545,
+  "today": 10,
+  "last7": 544,
   "tso_orgs": 50,
   "tso_people": 127,
   "countries": 101,
-  "companies": 1146,
+  "companies": 1147,
   "daily": [
    {
     "d": "Thu 05",
@@ -74,7 +74,7 @@
    },
    {
     "d": "Wed 18",
-    "n": 8
+    "n": 10
    }
   ],
   "top_countries": [
@@ -92,7 +92,7 @@
    ],
    [
     "Netherlands",
-    90
+    92
    ],
    [
     "India",
@@ -114,11 +114,11 @@
   "channels": [
    [
     "Website",
-    1360
+    1361
    ],
    [
     "No code",
-    312
+    313
    ],
    [
     "LinkedIn",
@@ -150,7 +150,7 @@
   "Visitors": 0,
   "Premium Pass": 0,
   "Speakers": 0,
-  "Exhibitors": 0
+  "Exhibitors": 1
  },
  "event_to_date": {
   "Visitors": 555,
@@ -162,31 +162,31 @@
   "Visitors": 555,
   "Premium Pass": 56,
   "Speakers": 1,
-  "Exhibitors": 714
+  "Exhibitors": 715
  },
  "returning": 0,
  "registered": {
-  "Visitors": 1699,
+  "Visitors": 1701,
   "Premium Pass": 144,
   "Speakers": 3,
   "Exhibitors": 1071
  },
  "speakers_merged": 27,
- "last15": 0,
+ "last15": 1,
  "tso_people_today": 0,
  "tso_orgs_today": 0,
  "tso_people_event": 53,
  "tso_orgs_event": 21,
- "countries_today": 0,
+ "countries_today": 1,
  "countries_event": 59,
- "companies_today": 0,
+ "companies_today": 1,
  "companies_event": 607,
  "showup_pct": 33,
  "hours": [
   {
    "h": "08",
    "aud": 0,
-   "exh": 0
+   "exh": 1
   }
  ],
  "top_countries": [],
@@ -197,6 +197,13 @@
    "Premium Pass": 56,
    "Speakers": 1,
    "Exhibitors": 714
+  },
+  {
+   "day": "Wed 18 Nov",
+   "Visitors": 0,
+   "Premium Pass": 0,
+   "Speakers": 0,
+   "Exhibitors": 1
   }
  ],
  "error": null
