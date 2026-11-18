@@ -63,7 +63,25 @@ th{color:var(--mute);font-weight:500}
   <span class="live" id="live"><span class="dot"></span><span id="age">loading…</span></span>
 </header>
 <div id="banner" class="banner"></div>
-<nav class="tabs"><button id="tabatt" type="button">Arrivals</button><button id="tabreg" type="button">Pre-reg</button></nav>
+<nav class="tabs"><button id="tabatt" type="button">Today</button><span id="daytabs" style="display:contents"></span><button id="tabreg" type="button">Pre-reg</button></nav>
+
+<section id="past" style="display:none">
+<div class="card hero">
+  <div class="lbl" id="paudlbl">Audience in</div>
+  <div class="n" id="paud">–</div>
+  <div class="sub" id="paudsub"></div>
+</div>
+<div class="grid" id="pgroups"></div>
+<div class="grid">
+  <div class="card"><div class="lbl">TSOs</div><div class="n" id="ptso">–</div><div class="sub" id="ptsosub"></div></div>
+  <div class="card"><div class="lbl">Busiest hour</div><div class="n" id="ppeak">–</div><div class="sub" id="ppeaksub"></div></div>
+  <div class="card"><div class="lbl">Countries</div><div class="n" id="pcty">–</div><div class="sub">all badges</div></div>
+  <div class="card"><div class="lbl">Companies</div><div class="n" id="pco">–</div><div class="sub">all badges</div></div>
+</div>
+<div class="card"><h2>Arrivals per hour</h2><div id="phours"></div>
+  <div class="key"><b class="a"></b>Audience<b class="e"></b>Exhibitors</div></div>
+<div class="card"><h2>Top countries, audience</h2><div id="pcountries"></div></div>
+</section>
 
 <section id="reg" style="display:none">
 <div class="card hero">
@@ -133,13 +151,48 @@ function ageTick(){
 
 // bump with PAGE_VERSION in build_onsite_dashboard.py: an old cached copy of this page
 // sees a newer number in data.json and reloads itself, so the phone never runs stale code
-const PAGE=12;
+const PAGE=13;
 
-// which tab is showing: null until chosen, ?tab=reg / ?tab=att opens on one directly
+// which tab is showing: null until chosen, ?tab=reg / ?tab=att opens on one directly.
+// An earlier show day's tab is its ISO date, e.g. "2026-11-17" (added 18/11).
 let view=({reg:"reg",att:"att"})[new URLSearchParams(location.search).get("tab")]??null;
+let past=[], pastKey="";
 function show(){
+  const p=past.find(x=>x.date===view);
+  if(view && view.length===10 && !p) view="att";   // that day is no longer in the data
   $("reg").style.display=view==="reg"?"block":"none"; $("att").style.display=view==="att"?"block":"none";
+  $("past").style.display=p?"block":"none";
   $("tabreg").className=view==="reg"?"on":""; $("tabatt").className=view==="att"?"on":"";
+  document.querySelectorAll("#daytabs button").forEach(b=>b.className=b.dataset.d===view?"on":"");
+  if(p) renderPast(p);
+}
+
+function renderPast(p){
+  const aud=sum(p.groups,AUD);
+  $("paudlbl").textContent=`Audience in, ${p.day}`;
+  $("paud").textContent=fmt(aud);
+  $("paudsub").textContent=`${fmt(p.new)} new · ${fmt(p.returning)} back from an earlier day`;
+  $("pgroups").innerHTML=G.map(g=>`<div class="card ${g==="Exhibitors"?"exh":""}"><div class="lbl">${g}</div>
+    <div class="n">${fmt(p.groups[g])}</div><div class="sub">${g==="Exhibitors"?"not in the audience":"in that day"}</div></div>`).join("");
+  $("ptso").textContent=fmt(p.tso_orgs); $("ptsosub").textContent=`orgs (${fmt(p.tso_people)} people)`;
+  const pk=p.hours.reduce((a,h)=>h.aud>a.aud?h:a,{h:"–",aud:0,exh:0});
+  $("ppeak").textContent=pk.h==="–"?"–":`${pk.h}:00`; $("ppeaksub").textContent=`${fmt(pk.aud)} audience arrivals`;
+  $("pcty").textContent=fmt(p.countries); $("pco").textContent=fmt(p.companies);
+  const hmax=Math.max(1,...p.hours.map(h=>h.aud+h.exh));
+  $("phours").innerHTML=p.hours.map(h=>`<div class="row"><span class="k">${h.h}:00</span>
+    <span class="bar"><i class="a" style="width:${100*h.aud/hmax}%"></i><i class="e" style="width:${100*h.exh/hmax}%"></i></span>
+    <span class="v">${h.aud+h.exh}</span></div>`).join("");
+  $("pcountries").innerHTML=bars(p.top_countries,true);
+}
+
+// one tab per earlier show day; rebuilt only when the set of days changes, so a tap isn't lost
+function dayTabs(list){
+  past=list||[];
+  const key=past.map(x=>x.date).join();
+  if(key===pastKey) return;
+  pastKey=key;
+  $("daytabs").innerHTML=past.slice().reverse().map(x=>`<button type="button" data-d="${x.date}">${x.tab}</button>`).join("");
+  document.querySelectorAll("#daytabs button").forEach(b=>b.onclick=()=>{view=b.dataset.d;show();window.scrollTo(0,0);});
 }
 
 // horizontal bar rows: [[label, n], ...]
@@ -176,6 +229,7 @@ function render(d){
   const scanning=d.mode!=="registration";
   if(view===null) view=scanning?"att":"reg";
   renderReg(d.registration);
+  dayTabs(d.past_days);
   $("noscan").style.display=scanning?"none":"block"; $("attbody").style.display=scanning?"block":"none";
   show();
   if(!scanning){ ageTick(); return; }
