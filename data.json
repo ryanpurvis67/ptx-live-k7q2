@@ -1,20 +1,20 @@
 {
  "event": "PTXB6",
  "page": 12,
- "built": "2026-11-18 10:40:04",
- "built_ts": 1794994817920,
+ "built": "2026-11-18 10:46:25",
+ "built_ts": 1794995197713,
  "test": false,
  "mode": "attendance",
  "registration": {
-  "total": 1870,
+  "total": 1869,
   "groups": {
-   "Visitors": 1725,
+   "Visitors": 1724,
    "Premium Pass": 145,
    "Speakers": 30,
    "Exhibitors": 1075
   },
   "today": 34,
-  "last7": 559,
+  "last7": 556,
   "tso_orgs": 51,
   "tso_people": 128,
   "countries": 101,
@@ -118,7 +118,7 @@
    ],
    [
     "No code",
-    314
+    313
    ],
    [
     "LinkedIn",
@@ -147,41 +147,41 @@
   ]
  },
  "today": {
-  "Visitors": 307,
-  "Premium Pass": 36,
+  "Visitors": 337,
+  "Premium Pass": 38,
   "Speakers": 2,
-  "Exhibitors": 457
+  "Exhibitors": 472
  },
  "event_to_date": {
-  "Visitors": 765,
+  "Visitors": 782,
   "Premium Pass": 76,
   "Speakers": 2,
-  "Exhibitors": 776
+  "Exhibitors": 782
  },
  "event_visits": {
-  "Visitors": 901,
-  "Premium Pass": 97,
+  "Visitors": 931,
+  "Premium Pass": 99,
   "Speakers": 3,
-  "Exhibitors": 1186
+  "Exhibitors": 1201
  },
- "returning": 158,
+ "returning": 173,
  "registered": {
-  "Visitors": 1725,
+  "Visitors": 1724,
   "Premium Pass": 145,
   "Speakers": 3,
   "Exhibitors": 1075
  },
  "speakers_merged": 27,
- "last15": 124,
- "tso_people_today": 33,
- "tso_orgs_today": 14,
+ "last15": 102,
+ "tso_people_today": 36,
+ "tso_orgs_today": 16,
  "tso_people_event": 74,
  "tso_orgs_event": 26,
- "countries_today": 52,
+ "countries_today": 53,
  "countries_event": 63,
- "companies_today": 432,
- "companies_event": 734,
- "showup_pct": 45,
+ "companies_today": 457,
+ "companies_event": 745,
+ "showup_pct": 46,
  "hours": [
   {
    "h": "08",
@@ -195,42 +195,42 @@
   },
   {
    "h": "10",
-   "aud": 260,
-   "exh": 130
+   "aud": 292,
+   "exh": 145
   }
  ],
  "top_countries": [
   [
    "Germany",
-   155
+   167
   ],
   [
    "United Kingdom",
-   14
+   16
+  ],
+  [
+   "Netherlands",
+   15
   ],
   [
    "Austria",
    14
   ],
   [
-   "Netherlands",
+   "China",
    14
   ],
   [
-   "China",
+   "Italy",
    13
   ],
   [
-   "Italy",
+   "Turkey",
    11
   ],
   [
-   "Turkey",
-   9
-  ],
-  [
-   "France",
-   9
+   "Switzerland",
+   11
   ]
  ],
  "per_day": [
@@ -243,10 +243,10 @@
   },
   {
    "day": "Wed 18 Nov",
-   "Visitors": 307,
-   "Premium Pass": 36,
+   "Visitors": 337,
+   "Premium Pass": 38,
    "Speakers": 2,
-   "Exhibitors": 457
+   "Exhibitors": 472
   }
  ],
  "error": null
