@@ -1,20 +1,20 @@
 {
  "event": "PTXB6",
  "page": 12,
- "built": "2026-11-18 09:36:37",
- "built_ts": 1794991008687,
+ "built": "2026-11-18 09:42:58",
+ "built_ts": 1794991390613,
  "test": false,
  "mode": "attendance",
  "registration": {
-  "total": 1849,
+  "total": 1850,
   "groups": {
-   "Visitors": 1705,
+   "Visitors": 1706,
    "Premium Pass": 144,
    "Speakers": 30,
    "Exhibitors": 1072
   },
   "today": 14,
-  "last7": 547,
+  "last7": 546,
   "tso_orgs": 50,
   "tso_people": 127,
   "countries": 101,
@@ -114,7 +114,7 @@
   "channels": [
    [
     "Website",
-    1365
+    1366
    ],
    [
     "No code",
@@ -147,40 +147,40 @@
   ]
  },
  "today": {
-  "Visitors": 14,
-  "Premium Pass": 5,
+  "Visitors": 21,
+  "Premium Pass": 6,
   "Speakers": 0,
-  "Exhibitors": 149
+  "Exhibitors": 208
  },
  "event_to_date": {
-  "Visitors": 569,
+  "Visitors": 575,
   "Premium Pass": 57,
   "Speakers": 1,
-  "Exhibitors": 735
+  "Exhibitors": 742
  },
  "event_visits": {
-  "Visitors": 570,
-  "Premium Pass": 61,
+  "Visitors": 577,
+  "Premium Pass": 62,
   "Speakers": 1,
-  "Exhibitors": 869
+  "Exhibitors": 931
  },
- "returning": 5,
+ "returning": 7,
  "registered": {
-  "Visitors": 1705,
+  "Visitors": 1706,
   "Premium Pass": 144,
   "Speakers": 3,
   "Exhibitors": 1072
  },
  "speakers_merged": 27,
- "last15": 89,
- "tso_people_today": 2,
+ "last15": 127,
+ "tso_people_today": 3,
  "tso_orgs_today": 2,
  "tso_people_event": 54,
  "tso_orgs_event": 22,
- "countries_today": 18,
+ "countries_today": 27,
  "countries_event": 59,
- "companies_today": 99,
- "companies_event": 616,
+ "companies_today": 128,
+ "companies_event": 620,
  "showup_pct": 34,
  "hours": [
   {
@@ -190,18 +190,22 @@
   },
   {
    "h": "09",
-   "aud": 17,
-   "exh": 126
+   "aud": 25,
+   "exh": 185
   }
  ],
  "top_countries": [
   [
    "Germany",
-   11
+   14
   ],
   [
    "Luxembourg",
    3
+  ],
+  [
+   "Albania",
+   2
   ],
   [
    "United Kingdom",
@@ -230,14 +234,14 @@
    "Visitors": 556,
    "Premium Pass": 56,
    "Speakers": 1,
-   "Exhibitors": 720
+   "Exhibitors": 723
   },
   {
    "day": "Wed 18 Nov",
-   "Visitors": 14,
-   "Premium Pass": 5,
+   "Visitors": 21,
+   "Premium Pass": 6,
    "Speakers": 0,
-   "Exhibitors": 149
+   "Exhibitors": 208
   }
  ],
  "error": null
