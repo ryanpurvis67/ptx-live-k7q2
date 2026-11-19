@@ -1,20 +1,20 @@
 {
  "event": "PTXB6",
  "page": 13,
- "built": "2026-11-19 09:51:19",
- "built_ts": 1795078294203,
+ "built": "2026-11-19 09:57:41",
+ "built_ts": 1795078678029,
  "test": false,
  "mode": "attendance",
  "registration": {
-  "total": 1918,
+  "total": 1920,
   "groups": {
-   "Visitors": 1773,
+   "Visitors": 1775,
    "Premium Pass": 145,
    "Speakers": 30,
    "Exhibitors": 1075
   },
-  "today": 9,
-  "last7": 550,
+  "today": 10,
+  "last7": 551,
   "tso_orgs": 51,
   "tso_people": 128,
   "countries": 101,
@@ -74,13 +74,13 @@
    },
    {
     "d": "Thu 19",
-    "n": 9
+    "n": 10
    }
   ],
   "top_countries": [
    [
     "Germany",
-    787
+    789
    ],
    [
     "Turkey",
@@ -114,7 +114,7 @@
   "channels": [
    [
     "Website",
-    1415
+    1417
    ],
    [
     "No code",
@@ -147,40 +147,40 @@
   ]
  },
  "today": {
-  "Visitors": 24,
+  "Visitors": 34,
   "Premium Pass": 8,
   "Speakers": 1,
-  "Exhibitors": 315
+  "Exhibitors": 367
  },
  "event_to_date": {
-  "Visitors": 1018,
+  "Visitors": 1025,
   "Premium Pass": 90,
   "Speakers": 2,
   "Exhibitors": 805
  },
  "event_visits": {
-  "Visitors": 1259,
+  "Visitors": 1269,
   "Premium Pass": 128,
   "Speakers": 4,
-  "Exhibitors": 1614
+  "Exhibitors": 1666
  },
- "returning": 273,
+ "returning": 275,
  "registered": {
-  "Visitors": 1773,
+  "Visitors": 1775,
   "Premium Pass": 145,
   "Speakers": 3,
   "Exhibitors": 1075
  },
  "speakers_merged": 28,
- "last15": 183,
+ "last15": 165,
  "tso_people_today": 5,
  "tso_orgs_today": 4,
  "tso_people_event": 87,
  "tso_orgs_event": 28,
- "countries_today": 29,
+ "countries_today": 34,
  "countries_event": 69,
- "companies_today": 163,
- "companies_event": 909,
+ "companies_today": 185,
+ "companies_event": 912,
  "showup_pct": 58,
  "hours": [
   {
@@ -190,14 +190,14 @@
   },
   {
    "h": "09",
-   "aud": 31,
-   "exh": 295
+   "aud": 41,
+   "exh": 347
   }
  ],
  "top_countries": [
   [
    "Germany",
-   16
+   21
   ],
   [
    "United Kingdom",
@@ -205,7 +205,7 @@
   ],
   [
    "Italy",
-   3
+   5
   ],
   [
    "San Marino",
@@ -216,15 +216,15 @@
    2
   ],
   [
+   "Switzerland",
+   2
+  ],
+  [
    "United States of America",
    1
   ],
   [
    "China",
-   1
-  ],
-  [
-   "Turkey",
    1
   ]
  ],
@@ -245,10 +245,10 @@
   },
   {
    "day": "Thu 19 Nov",
-   "Visitors": 24,
+   "Visitors": 34,
    "Premium Pass": 8,
    "Speakers": 1,
-   "Exhibitors": 315
+   "Exhibitors": 367
   }
  ],
  "past_days": [
