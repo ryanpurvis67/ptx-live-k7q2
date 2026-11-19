@@ -1,8 +1,8 @@
 {
  "event": "PTXB6",
  "page": 13,
- "built": "2026-11-19 12:04:43",
- "built_ts": 1795086300476,
+ "built": "2026-11-19 12:11:07",
+ "built_ts": 1795086680502,
  "test": false,
  "mode": "attendance",
  "registration": {
@@ -147,22 +147,22 @@
   ]
  },
  "today": {
-  "Visitors": 162,
+  "Visitors": 163,
   "Premium Pass": 28,
   "Speakers": 1,
-  "Exhibitors": 561
+  "Exhibitors": 563
  },
  "event_to_date": {
-  "Visitors": 1081,
+  "Visitors": 1082,
   "Premium Pass": 92,
   "Speakers": 2,
-  "Exhibitors": 812
+  "Exhibitors": 813
  },
  "event_visits": {
-  "Visitors": 1397,
+  "Visitors": 1398,
   "Premium Pass": 148,
   "Speakers": 4,
-  "Exhibitors": 1860
+  "Exhibitors": 1862
  },
  "returning": 330,
  "registered": {
@@ -172,15 +172,15 @@
   "Exhibitors": 1075
  },
  "speakers_merged": 28,
- "last15": 4,
+ "last15": 5,
  "tso_people_today": 24,
  "tso_orgs_today": 11,
  "tso_people_event": 89,
  "tso_orgs_event": 29,
  "countries_today": 46,
  "countries_event": 69,
- "companies_today": 342,
- "companies_event": 948,
+ "companies_today": 343,
+ "companies_event": 949,
  "showup_pct": 61,
  "hours": [
   {
@@ -202,6 +202,11 @@
    "h": "11",
    "aud": 21,
    "exh": 21
+  },
+  {
+   "h": "12",
+   "aud": 1,
+   "exh": 2
   }
  ],
  "top_countries": [
@@ -210,15 +215,15 @@
    84
   ],
   [
+   "Netherlands",
+   9
+  ],
+  [
    "Italy",
    8
   ],
   [
    "Montenegro",
-   8
-  ],
-  [
-   "Netherlands",
    8
   ],
   [
@@ -255,10 +260,10 @@
   },
   {
    "day": "Thu 19 Nov",
-   "Visitors": 162,
+   "Visitors": 163,
    "Premium Pass": 28,
    "Speakers": 1,
-   "Exhibitors": 561
+   "Exhibitors": 563
   }
  ],
  "past_days": [
