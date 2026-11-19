@@ -1,14 +1,14 @@
 {
  "event": "PTXB6",
  "page": 13,
- "built": "2026-11-19 12:42:58",
- "built_ts": 1795088591161,
+ "built": "2026-11-19 12:49:19",
+ "built_ts": 1795088972529,
  "test": false,
  "mode": "attendance",
  "registration": {
-  "total": 1926,
+  "total": 1927,
   "groups": {
-   "Visitors": 1781,
+   "Visitors": 1782,
    "Premium Pass": 145,
    "Speakers": 30,
    "Exhibitors": 1076
@@ -80,7 +80,7 @@
   "top_countries": [
    [
     "Germany",
-    793
+    794
    ],
    [
     "Turkey",
@@ -118,7 +118,7 @@
    ],
    [
     "No code",
-    320
+    321
    ],
    [
     "LinkedIn",
@@ -147,40 +147,40 @@
   ]
  },
  "today": {
-  "Visitors": 167,
+  "Visitors": 168,
   "Premium Pass": 28,
   "Speakers": 1,
   "Exhibitors": 570
  },
  "event_to_date": {
-  "Visitors": 1084,
+  "Visitors": 1085,
   "Premium Pass": 92,
   "Speakers": 2,
   "Exhibitors": 817
  },
  "event_visits": {
-  "Visitors": 1402,
+  "Visitors": 1403,
   "Premium Pass": 148,
   "Speakers": 4,
   "Exhibitors": 1869
  },
  "returning": 332,
  "registered": {
-  "Visitors": 1781,
+  "Visitors": 1782,
   "Premium Pass": 145,
   "Speakers": 3,
   "Exhibitors": 1076
  },
  "speakers_merged": 28,
- "last15": 6,
+ "last15": 3,
  "tso_people_today": 24,
  "tso_orgs_today": 11,
  "tso_people_event": 89,
  "tso_orgs_event": 29,
  "countries_today": 46,
  "countries_event": 69,
- "companies_today": 350,
- "companies_event": 952,
+ "companies_today": 351,
+ "companies_event": 953,
  "showup_pct": 61,
  "hours": [
   {
@@ -205,14 +205,14 @@
   },
   {
    "h": "12",
-   "aud": 5,
+   "aud": 6,
    "exh": 9
   }
  ],
  "top_countries": [
   [
    "Germany",
-   86
+   87
   ],
   [
    "Netherlands",
@@ -260,7 +260,7 @@
   },
   {
    "day": "Thu 19 Nov",
-   "Visitors": 167,
+   "Visitors": 168,
    "Premium Pass": 28,
    "Speakers": 1,
    "Exhibitors": 570
