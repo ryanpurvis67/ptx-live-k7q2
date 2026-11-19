@@ -1,8 +1,8 @@
 {
  "event": "PTXB6",
  "page": 13,
- "built": "2026-11-19 09:32:04",
- "built_ts": 1795077137930,
+ "built": "2026-11-19 09:38:33",
+ "built_ts": 1795077526213,
  "test": false,
  "mode": "attendance",
  "registration": {
@@ -11,10 +11,10 @@
    "Visitors": 1773,
    "Premium Pass": 145,
    "Speakers": 30,
-   "Exhibitors": 1076
+   "Exhibitors": 1075
   },
   "today": 9,
-  "last7": 552,
+  "last7": 551,
   "tso_orgs": 51,
   "tso_people": 128,
   "countries": 101,
@@ -147,40 +147,40 @@
   ]
  },
  "today": {
-  "Visitors": 6,
-  "Premium Pass": 6,
+  "Visitors": 10,
+  "Premium Pass": 7,
   "Speakers": 0,
-  "Exhibitors": 121
+  "Exhibitors": 175
  },
  "event_to_date": {
-  "Visitors": 1005,
+  "Visitors": 1007,
   "Premium Pass": 90,
   "Speakers": 2,
-  "Exhibitors": 802
+  "Exhibitors": 804
  },
  "event_visits": {
-  "Visitors": 1241,
-  "Premium Pass": 126,
+  "Visitors": 1245,
+  "Premium Pass": 127,
   "Speakers": 3,
-  "Exhibitors": 1420
+  "Exhibitors": 1474
  },
- "returning": 268,
+ "returning": 270,
  "registered": {
   "Visitors": 1773,
   "Premium Pass": 145,
   "Speakers": 3,
-  "Exhibitors": 1076
+  "Exhibitors": 1075
  },
  "speakers_merged": 28,
- "last15": 73,
- "tso_people_today": 3,
- "tso_orgs_today": 2,
+ "last15": 111,
+ "tso_people_today": 4,
+ "tso_orgs_today": 3,
  "tso_people_event": 87,
  "tso_orgs_event": 28,
- "countries_today": 16,
+ "countries_today": 21,
  "countries_event": 69,
- "companies_today": 71,
- "companies_event": 902,
+ "companies_today": 94,
+ "companies_event": 904,
  "showup_pct": 57,
  "hours": [
   {
@@ -190,11 +190,15 @@
   },
   {
    "h": "09",
-   "aud": 10,
-   "exh": 101
+   "aud": 15,
+   "exh": 155
   }
  ],
  "top_countries": [
+  [
+   "Germany",
+   6
+  ],
   [
    "United Kingdom",
    3
@@ -213,10 +217,6 @@
   ],
   [
    "United States of America",
-   1
-  ],
-  [
-   "Germany",
    1
   ],
   [
@@ -241,10 +241,10 @@
   },
   {
    "day": "Thu 19 Nov",
-   "Visitors": 6,
-   "Premium Pass": 6,
+   "Visitors": 10,
+   "Premium Pass": 7,
    "Speakers": 0,
-   "Exhibitors": 121
+   "Exhibitors": 175
   }
  ],
  "past_days": [
