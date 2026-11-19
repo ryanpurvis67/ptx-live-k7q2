@@ -1,8 +1,8 @@
 {
  "event": "PTXB6",
  "page": 13,
- "built": "2026-11-19 09:38:33",
- "built_ts": 1795077526213,
+ "built": "2026-11-19 09:44:57",
+ "built_ts": 1795077911614,
  "test": false,
  "mode": "attendance",
  "registration": {
@@ -14,7 +14,7 @@
    "Exhibitors": 1075
   },
   "today": 9,
-  "last7": 551,
+  "last7": 550,
   "tso_orgs": 51,
   "tso_people": 128,
   "countries": 101,
@@ -147,24 +147,24 @@
   ]
  },
  "today": {
-  "Visitors": 10,
-  "Premium Pass": 7,
-  "Speakers": 0,
-  "Exhibitors": 175
+  "Visitors": 15,
+  "Premium Pass": 8,
+  "Speakers": 1,
+  "Exhibitors": 236
  },
  "event_to_date": {
-  "Visitors": 1007,
+  "Visitors": 1011,
   "Premium Pass": 90,
   "Speakers": 2,
-  "Exhibitors": 804
+  "Exhibitors": 805
  },
  "event_visits": {
-  "Visitors": 1245,
-  "Premium Pass": 127,
-  "Speakers": 3,
-  "Exhibitors": 1474
+  "Visitors": 1250,
+  "Premium Pass": 128,
+  "Speakers": 4,
+  "Exhibitors": 1535
  },
- "returning": 270,
+ "returning": 272,
  "registered": {
   "Visitors": 1773,
   "Premium Pass": 145,
@@ -172,15 +172,15 @@
   "Exhibitors": 1075
  },
  "speakers_merged": 28,
- "last15": 111,
- "tso_people_today": 4,
- "tso_orgs_today": 3,
+ "last15": 142,
+ "tso_people_today": 5,
+ "tso_orgs_today": 4,
  "tso_people_event": 87,
  "tso_orgs_event": 28,
- "countries_today": 21,
+ "countries_today": 25,
  "countries_event": 69,
- "companies_today": 94,
- "companies_event": 904,
+ "companies_today": 125,
+ "companies_event": 905,
  "showup_pct": 57,
  "hours": [
   {
@@ -190,22 +190,22 @@
   },
   {
    "h": "09",
-   "aud": 15,
-   "exh": 155
+   "aud": 22,
+   "exh": 216
   }
  ],
  "top_countries": [
   [
    "Germany",
-   6
+   9
   ],
   [
    "United Kingdom",
-   3
+   4
   ],
   [
    "Italy",
-   2
+   3
   ],
   [
    "San Marino",
@@ -220,7 +220,11 @@
    1
   ],
   [
-   "Switzerland",
+   "Turkey",
+   1
+  ],
+  [
+   "Nepal",
    1
   ]
  ],
@@ -241,10 +245,10 @@
   },
   {
    "day": "Thu 19 Nov",
-   "Visitors": 10,
-   "Premium Pass": 7,
-   "Speakers": 0,
-   "Exhibitors": 175
+   "Visitors": 15,
+   "Premium Pass": 8,
+   "Speakers": 1,
+   "Exhibitors": 236
   }
  ],
  "past_days": [
