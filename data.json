@@ -1,8 +1,8 @@
 {
  "event": "PTXB6",
  "page": 13,
- "built": "2026-11-19 08:47:35",
- "built_ts": 1795074469031,
+ "built": "2026-11-19 08:53:59",
+ "built_ts": 1795074853841,
  "test": false,
  "mode": "attendance",
  "registration": {
@@ -148,9 +148,9 @@
  },
  "today": {
   "Visitors": 0,
-  "Premium Pass": 0,
+  "Premium Pass": 1,
   "Speakers": 0,
-  "Exhibitors": 5
+  "Exhibitors": 12
  },
  "event_to_date": {
   "Visitors": 1003,
@@ -160,9 +160,9 @@
  },
  "event_visits": {
   "Visitors": 1235,
-  "Premium Pass": 120,
+  "Premium Pass": 121,
   "Speakers": 3,
-  "Exhibitors": 1304
+  "Exhibitors": 1311
  },
  "returning": 265,
  "registered": {
@@ -172,24 +172,29 @@
   "Exhibitors": 1075
  },
  "speakers_merged": 28,
- "last15": 1,
+ "last15": 9,
  "tso_people_today": 0,
  "tso_orgs_today": 0,
  "tso_people_event": 85,
  "tso_orgs_event": 28,
- "countries_today": 3,
+ "countries_today": 6,
  "countries_event": 69,
- "companies_today": 4,
+ "companies_today": 9,
  "companies_event": 901,
  "showup_pct": 57,
  "hours": [
   {
    "h": "08",
-   "aud": 0,
-   "exh": 5
+   "aud": 1,
+   "exh": 12
   }
  ],
- "top_countries": [],
+ "top_countries": [
+  [
+   "United States of America",
+   1
+  ]
+ ],
  "per_day": [
   {
    "day": "Tue 17 Nov",
@@ -208,9 +213,9 @@
   {
    "day": "Thu 19 Nov",
    "Visitors": 0,
-   "Premium Pass": 0,
+   "Premium Pass": 1,
    "Speakers": 0,
-   "Exhibitors": 5
+   "Exhibitors": 12
   }
  ],
  "past_days": [
