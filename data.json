@@ -1,8 +1,8 @@
 {
  "event": "PTXB6",
  "page": 13,
- "built": "2026-11-19 10:35:40",
- "built_ts": 1795080954839,
+ "built": "2026-11-19 10:42:00",
+ "built_ts": 1795081335251,
  "test": false,
  "mode": "attendance",
  "registration": {
@@ -147,24 +147,24 @@
   ]
  },
  "today": {
-  "Visitors": 118,
-  "Premium Pass": 23,
+  "Visitors": 128,
+  "Premium Pass": 26,
   "Speakers": 1,
-  "Exhibitors": 524
+  "Exhibitors": 530
  },
  "event_to_date": {
-  "Visitors": 1058,
-  "Premium Pass": 91,
+  "Visitors": 1063,
+  "Premium Pass": 92,
   "Speakers": 2,
-  "Exhibitors": 809
+  "Exhibitors": 810
  },
  "event_visits": {
-  "Visitors": 1353,
-  "Premium Pass": 143,
+  "Visitors": 1363,
+  "Premium Pass": 146,
   "Speakers": 4,
-  "Exhibitors": 1823
+  "Exhibitors": 1829
  },
- "returning": 314,
+ "returning": 317,
  "registered": {
   "Visitors": 1779,
   "Premium Pass": 145,
@@ -172,15 +172,15 @@
   "Exhibitors": 1075
  },
  "speakers_merged": 28,
- "last15": 59,
- "tso_people_today": 19,
- "tso_orgs_today": 8,
- "tso_people_event": 88,
- "tso_orgs_event": 28,
- "countries_today": 43,
+ "last15": 44,
+ "tso_people_today": 22,
+ "tso_orgs_today": 11,
+ "tso_people_event": 89,
+ "tso_orgs_event": 29,
+ "countries_today": 45,
  "countries_event": 69,
- "companies_today": 301,
- "companies_event": 934,
+ "companies_today": 307,
+ "companies_event": 936,
  "showup_pct": 60,
  "hours": [
   {
@@ -195,18 +195,26 @@
   },
   {
    "h": "10",
-   "aud": 88,
-   "exh": 133
+   "aud": 101,
+   "exh": 139
   }
  ],
  "top_countries": [
   [
    "Germany",
-   62
+   64
   ],
   [
    "Italy",
    8
+  ],
+  [
+   "Montenegro",
+   8
+  ],
+  [
+   "Turkey",
+   6
   ],
   [
    "Austria",
@@ -222,14 +230,6 @@
   ],
   [
    "China",
-   5
-  ],
-  [
-   "Netherlands",
-   5
-  ],
-  [
-   "Montenegro",
    5
   ]
  ],
@@ -250,10 +250,10 @@
   },
   {
    "day": "Thu 19 Nov",
-   "Visitors": 118,
-   "Premium Pass": 23,
+   "Visitors": 128,
+   "Premium Pass": 26,
    "Speakers": 1,
-   "Exhibitors": 524
+   "Exhibitors": 530
   }
  ],
  "past_days": [
