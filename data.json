@@ -1,14 +1,14 @@
 {
  "event": "PTXB6",
  "page": 13,
- "built": "2026-11-19 10:22:58",
- "built_ts": 1795080193136,
+ "built": "2026-11-19 10:29:21",
+ "built_ts": 1795080574385,
  "test": false,
  "mode": "attendance",
  "registration": {
-  "total": 1921,
+  "total": 1920,
   "groups": {
-   "Visitors": 1776,
+   "Visitors": 1775,
    "Premium Pass": 145,
    "Speakers": 30,
    "Exhibitors": 1075
@@ -34,7 +34,7 @@
    },
    {
     "d": "Mon 09",
-    "n": 76
+    "n": 75
    },
    {
     "d": "Tue 10",
@@ -80,7 +80,7 @@
   "top_countries": [
    [
     "Germany",
-    790
+    789
    ],
    [
     "Turkey",
@@ -114,7 +114,7 @@
   "channels": [
    [
     "Website",
-    1417
+    1416
    ],
    [
     "No code",
@@ -147,40 +147,40 @@
   ]
  },
  "today": {
-  "Visitors": 99,
-  "Premium Pass": 20,
+  "Visitors": 111,
+  "Premium Pass": 22,
   "Speakers": 1,
-  "Exhibitors": 497
+  "Exhibitors": 516
  },
  "event_to_date": {
-  "Visitors": 1055,
+  "Visitors": 1057,
   "Premium Pass": 91,
   "Speakers": 2,
-  "Exhibitors": 807
+  "Exhibitors": 808
  },
  "event_visits": {
-  "Visitors": 1334,
-  "Premium Pass": 140,
+  "Visitors": 1346,
+  "Premium Pass": 142,
   "Speakers": 4,
-  "Exhibitors": 1796
+  "Exhibitors": 1815
  },
- "returning": 302,
+ "returning": 310,
  "registered": {
-  "Visitors": 1776,
+  "Visitors": 1775,
   "Premium Pass": 145,
   "Speakers": 3,
   "Exhibitors": 1075
  },
  "speakers_merged": 28,
- "last15": 78,
- "tso_people_today": 17,
+ "last15": 61,
+ "tso_people_today": 19,
  "tso_orgs_today": 8,
  "tso_people_event": 88,
  "tso_orgs_event": 28,
- "countries_today": 41,
+ "countries_today": 42,
  "countries_event": 69,
- "companies_today": 286,
- "companies_event": 933,
+ "companies_today": 295,
+ "companies_event": 934,
  "showup_pct": 60,
  "hours": [
   {
@@ -195,18 +195,18 @@
   },
   {
    "h": "10",
-   "aud": 66,
-   "exh": 106
+   "aud": 80,
+   "exh": 125
   }
  ],
  "top_countries": [
   [
    "Germany",
-   55
+   58
   ],
   [
    "Italy",
-   7
+   8
   ],
   [
    "Macedonia",
@@ -217,20 +217,20 @@
    5
   ],
   [
+   "China",
+   5
+  ],
+  [
    "Austria",
+   5
+  ],
+  [
+   "Netherlands",
    5
   ],
   [
    "Montenegro",
    5
-  ],
-  [
-   "China",
-   4
-  ],
-  [
-   "Netherlands",
-   4
   ]
  ],
  "per_day": [
@@ -250,10 +250,10 @@
   },
   {
    "day": "Thu 19 Nov",
-   "Visitors": 99,
-   "Premium Pass": 20,
+   "Visitors": 111,
+   "Premium Pass": 22,
    "Speakers": 1,
-   "Exhibitors": 497
+   "Exhibitors": 516
   }
  ],
  "past_days": [
