@@ -1,8 +1,8 @@
 {
  "event": "PTXB6",
  "page": 13,
- "built": "2026-11-19 13:53:22",
- "built_ts": 1795096402457,
+ "built": "2026-11-19 15:00:36",
+ "built_ts": 1795096852121,
  "test": false,
  "mode": "attendance",
  "registration": {
@@ -14,7 +14,7 @@
    "Exhibitors": 1076
   },
   "today": 18,
-  "last7": 527,
+  "last7": 525,
   "tso_orgs": 51,
   "tso_people": 128,
   "countries": 101,
@@ -474,5 +474,5 @@
    ]
   }
  ],
- "error": "JET pull failed: URLError"
+ "error": null
 }
