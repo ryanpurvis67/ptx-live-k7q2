@@ -1,8 +1,8 @@
 {
  "event": "PTXB6",
  "page": 13,
- "built": "2026-11-20 10:11:00",
- "built_ts": 1795165877946,
+ "built": "2026-11-20 10:17:26",
+ "built_ts": 1795166262325,
  "test": false,
  "mode": "attendance",
  "registration": {
@@ -14,7 +14,7 @@
    "Exhibitors": 1076
   },
   "today": 0,
-  "last7": 481,
+  "last7": 480,
   "tso_orgs": 51,
   "tso_people": 128,
   "countries": 101,
