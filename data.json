@@ -1,8 +1,8 @@
 {
  "event": "PTXB6",
  "page": 13,
- "built": "2026-11-26 14:26:08",
- "built_ts": 1795699583536,
+ "built": "2026-11-26 14:32:29",
+ "built_ts": 1795699964429,
  "test": false,
  "mode": "attendance",
  "registration": {
